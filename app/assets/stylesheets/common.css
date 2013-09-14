@@ -79,11 +79,18 @@ h3.section-subtitle {
   text-align: center;
 }
 
-#about {
+.row {
+  width: 980px !important;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto !important;
+}
+
+#service {
   background: url("white_texture.png");
 }
 
-.about-container, .page-container {
+.service-container, .page-container {
   margin: 0 auto;
   width: 960px;
   padding: 0;
@@ -91,7 +98,7 @@ h3.section-subtitle {
   padding-bottom: 50px !important;
 }
 
-.about-section {
+.service-section {
   margin: 0 auto;
   text-align: center;
   height: 260px;
@@ -106,7 +113,7 @@ h3.section-subtitle {
   transition: all 0.2s ease-in-out;
 }
 
-.about-section:hover {
+.service-section:hover {
   background:#F20272;
   padding-top: -1em;
   -webkit-transition: all 0.3s ease-in-out;
@@ -116,7 +123,7 @@ h3.section-subtitle {
   transition: all 0.3s ease-in-out;
 }
 
-.about-icon {
+.service-icon {
   width: 100%;
   height: 50px;
   margin: 0 auto;
@@ -130,7 +137,7 @@ h3.section-subtitle {
   transition: all 0.3s ease-in-out;
 }
 
-.about-section:hover .about-icon {
+.service-section:hover .service-icon {
   margin-top:15px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -139,7 +146,7 @@ h3.section-subtitle {
   transition: all 0.3s ease-in-out;
 }
 
-h2.about-section-title {
+h2.service-section-title {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -157,7 +164,7 @@ h2.about-section-title {
   transition: all 0.2s ease-in-out;
 }
 
-.about-section:hover h2.about-section-title {
+.service-section:hover h2.service-section-title {
   color:#fff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -166,7 +173,7 @@ h2.about-section-title {
   transition: all 0.2s ease-in-out;
 }
 
-p.about-section-content {
+p.service-section-content {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -183,7 +190,7 @@ p.about-section-content {
   transition: all 0.2s ease-in-out;
 }
 
-.about-section:hover p.about-section-content {
+.service-section:hover p.service-section-content {
   color:#fff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -192,8 +199,8 @@ p.about-section-content {
   transition: all 0.2s ease-in-out;
 }
 
-span.about-section-read-more {
-  background: url(images/about-read-more.jpg) top center no-repeat;
+span.service-section-read-more {
+  background: url(images/service-read-more.jpg) top center no-repeat;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -213,11 +220,11 @@ span.about-section-read-more {
   transition: all 0.2s ease-in-out;
 }
 
-span.about-section-read-more a {
+span.service-section-read-more a {
   color: #fff;
 }
 
-.about-section:hover span.about-section-read-more {
+.service-section:hover span.service-section-read-more {
   opacity:1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -234,6 +241,133 @@ span.about-section-read-more a {
   display: block;
   margin-bottom: 20px;
   background: url(services-header.png) no-repeat top center;
+}
+
+#about {
+  background: url(absurdidad.png);
+}
+
+.service-container, .page-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+#contents {
+  background: url(absurdidad.png);
+}
+
+.blog-two-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+
+.blog-two-section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 !important;
+  text-align: center;
+  height: 240px;
+  display: block;
+  background: none;
+  float: left !important;
+  margin: 1%;
+  width: 31% !important;
+}
+
+.blog-two-overlay {
+  width: 100% !important;
+  height: 100%;
+  background: url(blog-two-overlay.png) repeat-x bottom;
+  display: block;
+}
+
+h2.blog-two-section-title {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'archiveregular';
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: none;
+  line-height: 24px;
+  margin-bottom: 0px;
+  bottom: 20px;
+  position: absolute;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+h2.blog-two-section-title a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+span.blog-two-section-read-more {
+  background: url(images/about-read-more.jpg) top center no-repeat;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 16px;
+  margin-top: 10px;
+  padding-top: 10px;
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+span.blog-two-section-read-more a {
+  font-family: 'PT Sans', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-two-section:hover h2.blog-two-section-title {
+  bottom:60px;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-two-section:hover p.blog-two-section-content {
+  color:#fff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.blog-two-section:hover span.blog-two-section-read-more {
+  opacity:1;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #footer {
