@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'archiveregular';
+    src: url('archive-webfont.eot');
+    src: url('archive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('archive-webfont.woff') format('woff'),
+         url('archive-webfont.ttf') format('truetype'),
+         url('archive-webfont.svg#archiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'dearjoe4regular';
+    src: url('dj4trial-webfont.eot');
+    src: url('dj4trial-webfont.eot?#iefix') format('embedded-opentype'),
+         url('dj4trial-webfont.woff') format('woff'),
+         url('dj4trial-webfont.ttf') format('truetype'),
+         url('dj4trial-webfont.svg#dearjoe4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+  font-family: 'entypo-selected';
+  src: url("entypo-selected.eot");
+  src: 
+	  url("entypo-selected.eot?#iefix") format('embedded-opentype'), 
+	  url("entypo-selected.woff") format('woff'), 
+	  url("entypo-selected.ttf") format('truetype'), 
+	  url("entypo-selected.svg#entypo-selected") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

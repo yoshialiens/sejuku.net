@@ -26,7 +26,8 @@
 
 .demo-2 .sl-slider h2 {
 	font-size: 100px;
-	text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 3px #000;
+  font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6";
 }
 
 .demo-2 .sl-slider blockquote {
@@ -38,6 +39,8 @@
 
 .demo-2 .sl-slider blockquote p {
 	font-size: 28px !important;
+  text-shadow: 1px 1px 3px #000;
+  font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6";
 }
 
 .demo-2 .sl-slider blockquote cite {
@@ -360,7 +363,7 @@
 }
 
 .demo-2 .bg-img-1 {
-	background-image: url(1.jpg);
+	background-image: url(headbg.jpg);
 }
 .demo-2 .bg-img-2 {
 	background-image: url(2.jpg);
