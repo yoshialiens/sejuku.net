@@ -154,7 +154,6 @@ DEPENDENCIES
   execjs
   jquery-rails
   less-rails
-  omniauth
   omniauth-facebook
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
