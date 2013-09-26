@@ -782,3 +782,11 @@ span.contents-section-read-more a {
   left: 0;
   background-image: url('prev.png');
 }
+
+.section:nth-child(odd) {
+  background: url(absurdidad.png);
+}
+
+.section:nth-child(even) {
+  background: url("white_texture.png");
+}
