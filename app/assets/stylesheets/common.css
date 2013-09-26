@@ -2,6 +2,13 @@
   margin-bottom: 0px;
 }
 
+.navbar .brand {
+  font-size: 28px;
+  font-family: "ヒラギノ明朝 ProN W6","HiraMinProN-W6";
+  color: #999999;
+  text-shadow: 1px 1px 1px #585858, -2px -2px 2px #FFFFFF;
+}
+
 .navbar-inner {
   background: url("debut_light.png");
 }
@@ -386,7 +393,7 @@ span.contents-section-read-more a {
   width: 100%;
   margin: 0 auto;
   padding: 0;
-  padding-top: 80px !important;
+  padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
 
@@ -583,7 +590,7 @@ span.contents-section-read-more a {
   text-align: center;
 }
 
-.lesson-content p {
+.contents-content p, .events-content p, .lesson-content p {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -774,4 +781,12 @@ span.contents-section-read-more a {
 #timeline_prev {
   left: 0;
   background-image: url('prev.png');
+}
+
+.section:nth-child(odd) {
+  background: url(absurdidad.png);
+}
+
+.section:nth-child(even) {
+  background: url("white_texture.png");
 }

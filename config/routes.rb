@@ -1,4 +1,7 @@
 Sejuku::Application.routes.draw do
+	match "pages/content1"
+	match "pages/content2"
+	match "pages/content3"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

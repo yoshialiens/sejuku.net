@@ -10,7 +10,7 @@
 
 <div class="navbar">
   <div class="navbar-inner">
-    <a class="brand" href="#">Samurai Enginer Juku</a>
+    <a class="brand" href="#">侍エンジニア塾</a>
     <ul class="nav pull-right">
       <li class="active"><a href="#">Top</a></li>
       <li><a href="#about">About</a></li>
@@ -18,6 +18,13 @@
       <li><a href="#contents">Contents</a></li>
       <li><a href="#events">events</a></li>
       <li><a href="#lesson">Lesson</a></li>
+			<li>
+			<% if user_signed_in? %>
+				Sign in as <strong><%= current_user.name %></strong> | <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+			<% else %>
+				<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+			<% end %>
+			</li>
     </ul>
   </div>
 </div>
