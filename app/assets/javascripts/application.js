@@ -7,4 +7,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
+//= require modernizr.custom.79639
 //= require_tree .
