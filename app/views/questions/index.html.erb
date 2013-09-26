@@ -1,0 +1,23 @@
+<div class="questions row">
+  <h1 class="left">最新の質問</h1>
+
+  <%= link_to ' 質問をする', new_question_path, :class => "new-question icon-plus-sign" %>
+
+  <table class="table">
+  <% @questions.each do |question| %>
+    <tr>
+      <td>
+        <div class="summary">
+          <%= link_to question.title, question %>
+          <br/>
+          <p class="answers-length">回答数<%= question.answers.length %></p>
+          <div class="user-infomation">
+            <p><%= question.user.name if question.user %></p>
+            <%= image_tag question.user.provider_image_url if (question.user)? question.user.provider_image_url : false %>
+          </div>
+        </div>
+      </td>
+    </tr>
+  <% end %>
+  </table>
+</div>

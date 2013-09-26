@@ -8,5 +8,7 @@
  *= require sl_slider
  *= require sl_slider_custom
  *= require common
+ *= require questions
+ *= require answers
  *= require fonts
  */

@@ -1,0 +1,43 @@
+<div class="questions row">
+  <table class="table">
+    <tr>
+      <td>
+        <h2><%= @question.title %></h2>
+        <div class="clearfix">
+          <br/>
+          <%= simple_format(@question.body) %>
+          <div class="user-infomation">
+            <p><%= @question.user.name if @question.user %></p>
+            <%= image_tag @question.user.provider_image_url if (@question.user)? @question.user.provider_image_url : false %>
+          </div>
+        </div>
+      </td>
+    </tr>
+    <% @question.answers.each_with_index do |answer, i| %>
+      <tr>
+      <td>
+        <% break unless answer.body.present? %>
+        <h3>回答<%= i + 1 %></h3>
+        <%= simple_format(answer.body) %>
+        <div class="user-infomation">
+          <p><%= answer.user.name if answer.user %></p>
+          <%= image_tag answer.user.provider_image_url if (answer.user)? answer.user.provider_image_url : false %>
+        </div>
+      </td>
+    <% end %>
+    </tr>
+  </table>
+
+  <%= form_for([@question, @answer]) do |f| %>
+    <div class="field">
+      <%= f.label :body, "回答内容" %>
+      <%= f.text_area :body, :rows => 5 %>
+    </div>
+    <%= f.hidden_field :question_id, :value => @question.id %>
+    <div class="actions">
+      <%= f.submit "回答する" %>
+    </div>
+  <% end %>
+
+  <%= link_to '一覧に戻る', questions_path %>
+</div>

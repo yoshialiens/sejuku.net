@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :trackable, :omniauthable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :name, :provider, :uid
+  attr_accessible :email, :password, :name, :provider, :uid, :provider_image_url
   # attr_accessible :title, :body
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
@@ -15,6 +15,7 @@ class User < ActiveRecord::Base
                          provider:auth.provider,
                          uid:auth.uid,
                          email:auth.info.email,
+                         provider_image_url:auth.info.image,
                          password:Devise.friendly_token[0,20]
                         )
     end

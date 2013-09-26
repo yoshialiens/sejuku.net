@@ -1,3 +1,7 @@
+.left {
+  float: left;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -67,8 +71,8 @@ h1.section-title {
   margin-top: 210px;
   font-family: 'archiveregular';
   color: #505050;
-  font-size: 94px;
-  line-height: 94px;
+  font-size: 60px;
+  line-height: 70px;
   font-weight: normal;
   text-align: center;
 }
@@ -107,7 +111,7 @@ h3.section-subtitle {
 .service-section {
   margin: 0 auto;
   text-align: center;
-  height: 280px;
+  height: 300px;
   width: 33%;
   display: block;
   background: none;
@@ -185,7 +189,7 @@ p.service-section-content {
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
@@ -212,7 +216,7 @@ span.service-section-read-more {
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   color: #fff;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 16px;
@@ -259,6 +263,8 @@ span.service-section-read-more a {
   padding: 0;
   padding-top: 50px !important;
   padding-bottom: 50px !important;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 #contents {
@@ -507,19 +513,19 @@ span.contents-section-read-more a {
   padding: 0;
   font-family: 'PT Sans', sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
 }
 
 .events-read-more a {
+  color: #0088cc;
   width: 100%;
   margin: 0 auto;
   padding: 0;
   font-family: 'archiveregular';
-  color: #676767;
-  font-size: 16px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
@@ -597,7 +603,7 @@ span.contents-section-read-more a {
   margin-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
@@ -628,7 +634,7 @@ span.contents-section-read-more a {
   margin-bottom: 10px;
   font-family: 'archiveregular';
   color: #505050;
-  font-size: 48px;
+  font-size: 22px;
   line-height: 48px;
   font-weight: normal;
   text-align: center;
@@ -641,7 +647,7 @@ span.contents-section-read-more a {
   margin-bottom: 20px;
   font-family: 'PT Sans', sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
@@ -745,7 +751,7 @@ span.contents-section-read-more a {
 #issues li p {
   font-family: 'PT Sans', sans-serif;
   color: #676767;
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 400;
   text-transform: none;
   line-height: 26px;
@@ -789,4 +795,8 @@ span.contents-section-read-more a {
 
 .section:nth-child(even) {
   background: url("white_texture.png");
+}
+
+a {
+  color: #0088cc;
 }

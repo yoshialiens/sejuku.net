@@ -1,4 +1,10 @@
 Sejuku::Application.routes.draw do
+  resources :questions do
+    resources :answers
+  end
+  resources :answers
+  resources :questions
+
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
 	match "pages/content1"

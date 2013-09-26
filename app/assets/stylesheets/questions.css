@@ -1,0 +1,51 @@
+.questions {
+  margin: 32px auto !important;
+}
+
+.questions .summary {
+  margin-top: 8px;
+}
+
+.questions .new-question {
+  float: right;
+  margin-top: 12px;
+  font-size:20px;
+}
+
+.questions table a {
+  font-size: 32px;
+  color: #0088cc;
+  line-height: 120%;
+}
+
+.user-infomation {
+  float: right;
+}
+
+.user-infomation img {
+  max-height: 32px;
+  max-width: 32px;
+}
+
+.user-infomation p {
+  margin-top: 8px;
+  margin-right: 8px;
+  float: left;
+}
+
+.field {
+  margin: 32px 0;
+}
+
+.field input{
+  width: 100%;
+}
+
+.field textarea {
+  width: 100%;
+}
+
+.answers-length {
+  float: left;
+  margin-top: 8px;
+}
