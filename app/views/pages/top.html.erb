@@ -20,12 +20,24 @@
 <div class="navbar second">
   <div class="navbar-inner">
     <ul class="nav">
-      <li><a href="#">Top</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#service">Service</a></li>
-      <li><a href="#contents">Contents</a></li>
-      <li><a href="#events">events</a></li>
-      <li><a href="#lesson">Lesson</a></li>
+      <li><a href="/#">Top</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#service">Service</a></li>
+      <li><a href="/#contents">Contents</a></li>
+			<% if user_signed_in? %>
+        <li><a href="/questions">Q&A</a></li>
+			<% else %>
+        <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
+      <% end %>
+      <li><a href="/#events">events</a></li>
+      <li><a href="/#lesson">Lesson</a></li>
+			<li>
+        <% if user_signed_in? %>
+          <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+        <% else %>
+          <%= link_to "Facebook login", user_omniauth_authorize_path(:facebook) %>
+        <% end %>
+			</li>
     </ul>
   </div>
 </div>
@@ -95,7 +107,13 @@
       </div>
       <h2 class="twelve columns service-section-title">Q&A</h2>
       <p class="twelve columns service-section-content">侍エンジニア塾で紹介している学習方法をやってみて、わからない事があったらここに質問して下さい。無料で質問にお答えします。</p>
-      <span class="twelve columns service-section-read-more"><a href="/questions">Read More</a></span>
+      <span class="twelve columns service-section-read-more">
+        <% if user_signed_in? %>
+          <a href="/questions">Read More</a>
+        <% else %>
+          <a data-toggle="modal" href="#modal-login">Read More</a>
+        <% end %>
+      </span>
     </div>
     <div class="four columns service-section">
     </div>
@@ -119,20 +137,56 @@
     </div>
     <div class="four columns contents-section mobile-four" style="background:url(/assets/contents1.png) repeat-x center">
       <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title"><a href="/pages/content1">二週間でプログラミング基礎をマスターする方法</a></h2>
-        <span class="twelve columns contents-section-read-more"><a href="/pages/content1">Read More</a></span>
+        <h2 class="twelve columns contents-section-title">
+          <% if user_signed_in? %>
+            <a href="/pages/content1">二週間でプログラミング基礎をマスターする方法</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">二週間でプログラミング基礎をマスターする方法</a>
+          <% end %>
+        </h2>
+        <span class="twelve columns contents-section-read-more">
+          <% if user_signed_in? %>
+            <a href="/pages/content1">Read More</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">Read More</a>
+          <% end %>
+        </span>
       </div>
     </div>
     <div class="four columns contents-section mobile-four" style="background:url(/assets/contents2.jpg) repeat-x center">
       <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title"><a href="/pages/content2">二ヶ月でウェブサービスを作る方法</a></h2>
-        <span class="twelve columns contents-section-read-more"><a href="/pages/content2">Read More</a></span>
+        <h2 class="twelve columns contents-section-title">
+          <% if user_signed_in? %>
+            <a href="/pages/content2">二ヶ月でウェブサービスを作る方法</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">二ヶ月でウェブサービスを作る方法</a>
+          <% end %>
+        </h2>
+        <span class="twelve columns contents-section-read-more">
+          <% if user_signed_in? %>
+            <a href="/pages/content2">Read More</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">Read More</a>
+          <% end %>
+        </span>
       </div>
     </div>
     <div class="four columns contents-section mobile-four" style="background:url(/assets/contents3.jpg) repeat-x center">
       <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title"><a href="/pages/content3">二週間でプログラマーとして飯を食う方法</a></h2>
-        <span class="twelve columns contents-section-read-more"><a href="/pages/content">Read More</a></span>
+        <h2 class="twelve columns contents-section-title">
+          <% if user_signed_in? %>
+            <a href="/pages/content3">二週間でプログラマーとして飯を食う方法</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">二週間でプログラマーとして飯を食う方法</a>
+          <% end %>
+        </h2>
+        <span class="twelve columns contents-section-read-more">
+          <% if user_signed_in? %>
+            <a href="/pages/content3">Read More</a>
+          <% else %>
+            <a data-toggle="modal" href="#modal-login">Read More</a>
+          <% end %>
+        </span>
       </div>
     </div>
 

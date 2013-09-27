@@ -16,7 +16,11 @@
       <li><a href="/#about">About</a></li>
       <li><a href="/#service">Service</a></li>
       <li><a href="/#contents">Contents</a></li>
-      <li><a href="/questions">Q&A</a></li>
+			<% if user_signed_in? %>
+        <li><a href="/questions">Q&A</a></li>
+			<% else %>
+        <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
+      <% end %>
       <li><a href="/#events">events</a></li>
       <li><a href="/#lesson">Lesson</a></li>
 			<li>
@@ -38,6 +42,16 @@
   <p>
   Copyright Samurai Enginer School 2013
   </p>
+</div>
+
+<div id="modal-login" class="modal hide fade" tabindex="-1" data-width="760">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>ここから先はログインしてご覧ください。</h3>
+  </div>
+  <div class="modal-body center">
+    <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
+  </div>
 </div>
 
 </body>

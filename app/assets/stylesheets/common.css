@@ -2,6 +2,10 @@
   float: left;
 }
 
+.center {
+  text-align: center;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -798,5 +802,9 @@ span.contents-section-read-more a {
 }
 
 a {
+  color: #1CA5AF;
+}
+
+.modal-header h3 {
   color: #1CA5AF;
 }
