@@ -49,4 +49,4 @@ gem "twitter-bootstrap-rails"
 gem "devise"
 gem 'omniauth-facebook'
 
-gem 'exception_notification'
+gem 'exception_notification', '~> 3.0.1'
