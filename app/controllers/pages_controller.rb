@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   def top
+		raise "exception sample"
   end
 
   def content1
