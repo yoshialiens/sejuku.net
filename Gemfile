@@ -48,3 +48,5 @@ gem "twitter-bootstrap-rails"
 
 gem "devise"
 gem 'omniauth-facebook'
+
+gem 'exception_notification'
