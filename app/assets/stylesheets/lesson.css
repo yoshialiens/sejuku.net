@@ -42,8 +42,13 @@ footer img {
 }
 
 header {
-  margin: 80px auto;
-  background: url(lesson/header.jpg);
+  background: url(lesson/header_bg.jpg);
+  text-align: center;
+  background-position: bottom;
+}
+
+header img {
+  margin: 120px auto;
   width: 880px;
   height: 471px;
   -moz-box-shadow: 1px 1px 3px #000;
