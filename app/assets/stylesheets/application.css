@@ -4,6 +4,7 @@
  * the top of the compiled file, but it's generally better to create a new file per style scope.
  *= require_self
  *= require bootstrap_and_overrides
+ *= require bootstrap-modal
  *= require sl_slider_demo
  *= require sl_slider
  *= require sl_slider_custom
@@ -11,5 +12,5 @@
  *= require questions
  *= require answers
  *= require fonts
- *= require bootstrap-modal
+ *= require lesson
  */

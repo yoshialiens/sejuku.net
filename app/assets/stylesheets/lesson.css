@@ -1,0 +1,51 @@
+html,body {
+  height:100%;
+}
+
+html {
+  overflow-y:scroll;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+footer img {
+  max-width: none;
+}
+
+.content {
+  background-position: center top!important;
+  min-height: 1077px;
+}
+
+.content:nth-child(2) {
+  background: url(lesson/background1.gif);
+}
+
+.content:nth-child(3) {
+  background: url(lesson/background2.gif);
+}
+
+.content:nth-child(4) {
+  background: url(lesson/background3.gif);
+}
+
+.content:nth-child(5) {
+  background: url(lesson/background4.gif);
+}
+
+.content:nth-child(6) {
+  background: url(lesson/background5.gif);
+}
+
+header {
+  margin: 80px auto;
+  background: url(lesson/header.jpg);
+  width: 880px;
+  height: 471px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+}

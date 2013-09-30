@@ -11,6 +11,7 @@ Sejuku::Application.routes.draw do
 	match "pages/content2"
 	match "pages/content3"
 	match "pages/ruby_install_mac"
+	match "pages/lesson"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
