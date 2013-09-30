@@ -1,0 +1,58 @@
+<div class="section clearfix">
+  <div class="contain-to-grid clearfix">
+    <div class="twelve columns section-heading">
+      <h1 class="twelve columns section-title">Mac OS Xへのruby1.9.3のインストール</h1>
+      <h3 class="twelve columns section-subtitle"></h3>
+    </div>
+  </div>
+  <div class="row page-container">
+    1. App Storeから「Xcode」をダウンロード＆インストール（今回はXcode4.6.2）<br/>
+<br/>
+    2. コマンドラインツールのダウンロード＆インストール<br/>
+    　Xcode起動<br/>
+    　メニュー[Xcode]-[Preferences]で設定画面を表示<br/>
+    　[Downloads]-[Components]を表示<br/>
+    　「Command Line Tools」を選択しインストール<br/>
+<br/>
+    3. パッケージ管理ツール「Homebrew」をダウンロード＆インストール<br/>
+    　ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"<br/>
+    　brew doctor<br/>
+    　※「Homebrew」については<a href="http://mxcl.github.io/homebrew/index_ja.html" target="_blank">http://mxcl.github.io/homebrew/index_ja.html</a>を参照<br/>
+<br/>
+    4. Rubyバージョン管理ツール「rbenv」とそのビルドプラグイン「ruby-build」の準備<br/>
+    　ダウンロード＆インストール<br/>
+    　　brew install rbenv<br/>
+    　　brew install ruby-build<br/>
+    　「rbenv」の設定を.bash_profileに追加<br/>
+    　　echo 'eval "$(rbenv init -)"' >> ~/.bash_profile<br/>
+    　　source ~/.bash_profile<br/>
+    　「rbenv」の反映<br/>
+    　　rbenv rehash<br/>
+    　　<br/>
+    5 .rubyのダウンロード＆インストール<br/>
+    　必要なモジュール(readline,openssl)の事前インストール<br/>
+    　　brew install readline<br/>
+    　　brew link readline<br/>
+    　　brew install openssl<br/>
+    　　brew link openssl<br/>
+    　インストール可能なRubyバージョンの確認<br/>
+    　　rbenv install<br/>
+    　入れたいバージョンをインストール<br/>
+    　（今回は1.9.3の最新版1.9.3-p429をインストール）<br/>
+    　　rbenv install 1.9.3-p429<br/>
+    　「rbevn」でインストールされたバージョン確認と設定<br/>
+    　インストールされたバージョン一覧<br/>
+    　（*は現在有効なバージョン、systemはOS標準）<br/>
+    　　rbenv versions<br/>
+    　利用するバージョンへの切り替え<br/>
+    　　rbenv global 1.9.3-p429<br/>
+    　　rbenv rehash<br/>
+    　　<br/>
+    6. rubyのバージョン確認<br/>
+    　ruby -v<br/>
+    　※ここで1.8.7と表示される場合、古いrubyが優先されているので、削除<br/>
+    　sudo rm /usr/bin/ruby<br/>
+    　ruby -v<br/>
+    　バージョンが変わっていれば完了<br/>
+  </div>
+</div>

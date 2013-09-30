@@ -101,7 +101,6 @@ h3.section-subtitle {
 }
 
 #service {
-  background: url("white_texture.png");
 }
 
 .service-container, .page-container {
@@ -396,7 +395,6 @@ span.contents-section-read-more a {
 }
 
 #events {
-  background: url("white_texture.png");
 }
 
 .events-container {
@@ -798,7 +796,6 @@ span.contents-section-read-more a {
 }
 
 .section:nth-child(even) {
-  background: url("white_texture.png");
 }
 
 a {
