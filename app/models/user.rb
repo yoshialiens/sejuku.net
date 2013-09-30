@@ -5,13 +5,17 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :trackable, :omniauthable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :name, :provider, :uid, :provider_image_url
+  attr_accessible :first_name, :last_name, :email, :password, :name, :provider, :uid, :provider_image_url
   # attr_accessible :title, :body
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
     user = User.where(:provider => auth.provider, :uid => auth.uid).first
+    graph = Koala::Facebook::API.new(auth.credentials.token)
+    profile = graph.get_object("me", {:locale => "ja"})
     unless user
-      user = User.create(name:auth.extra.raw_info.name,
+      user = User.create(name:(profile["name"])? profile["name"] : auth.extra.raw_info.name,
+                         first_name: profile["first_name"],
+                         last_name: profile["last_name"],
                          provider:auth.provider,
                          uid:auth.uid,
                          email:auth.info.email,
