@@ -7,22 +7,33 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<header>
-  <%= image_tag "/assets/lesson/header.jpg" %>
-</header>
-<div class="content">
-</div>
-<div class="content">
-</div>
-<div class="content">
-</div>
-<div class="content">
-</div>
-<div class="content">
-</div>
+  <div class="navbar navbar-inverse navbar-fixed-top lesson">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="#">侍エンジニア塾とは？</a></li>
+          <li><a href="#">お客様の声</a></li>
+          <li><a href="#">他サービスとの比較</a></li>
+          <li><a href="#">最強学習メソッド</a></li>
+          <li><a href="#">料金プラン</a></li>
+          <li><a href="#">体験申込み</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-<footer>
-  <%= image_tag "/assets/lesson/footer.gif" %>
-</footer>
+  <header>
+    <%= image_tag "/assets/lesson/header.jpg" %>
+  </header>
+
+  <div class="contents">
+    <div class="contents-inner">
+      <%= yield %>
+    </div>
+  </div>
+
+  <footer>
+    <%= image_tag "/assets/lesson/footer.gif" %>
+  </footer>
 </body>
 </html>
