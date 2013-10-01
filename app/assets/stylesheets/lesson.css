@@ -46,6 +46,10 @@ header img {
   background-repeat: repeat-x;
 }
 
+.lesson .container {
+  width: 960px!important;
+}
+
 .lesson .nav>li {
   margin-right: 20px;
 }
