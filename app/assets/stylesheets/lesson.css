@@ -72,6 +72,7 @@ header img {
 .contents-inner {
   width: 960px;
   margin: 0px auto;
+  padding-bottom: 80px;
 }
 
 .border {
@@ -80,4 +81,12 @@ header img {
 
 .title {
   margin-bottom: 20px;
+}
+
+.space {
+  height: 40px;
+}
+
+.space-half {
+  height: 20px;
 }
