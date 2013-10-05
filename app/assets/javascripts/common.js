@@ -1,5 +1,5 @@
 $(function() {
-  //slider
+  // slider
   var Page = (function() {
     var $navArrows = $( '#nav-arrows' ),
       $nav = $( '#nav-dots > span' ),
