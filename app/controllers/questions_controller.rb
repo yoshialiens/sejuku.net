@@ -49,6 +49,8 @@ class QuestionsController < ApplicationController
     @question = Question.new(params[:question])
     @question.user_id = current_user.id
 
+    QuestionsMailer.notification(@question).deliver
+
     respond_to do |format|
       if @question.save
         format.html { redirect_to @question, notice: 'Question was successfully created.' }
