@@ -21,6 +21,20 @@
   background: url("debut_light.png");
 }
 
+header {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
+  background-color: #101010;
+  padding: 0!important;
+  margin: 0!important;
+  width: 100%!important;
+  text-align: center;
+}
+
+header img {
+  width: 960px;
+  height: 514px;
+}
+
 .second .nav,
 .second .nav > li {
   float:none;
@@ -59,6 +73,10 @@
   min-height: 1px;
   padding: 0 15px;
   position: relative;
+}
+
+.section .center img {
+  margin-bottom: 50px;
 }
 
 .section-heading {
@@ -107,7 +125,6 @@ h3.section-subtitle {
   margin: 0 auto;
   width: 960px;
   padding: 0;
-  padding-top: 50px !important;
   padding-bottom: 50px !important;
 }
 
@@ -256,11 +273,16 @@ span.service-section-read-more a {
   background: url(services-header.png) no-repeat top center;
 }
 
-#about {
-  background: url(absurdidad.png);
+.service-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 50px !important;
+  font-size: 20px;
+  line-height: 24px;
 }
 
-.service-container, .page-container {
+.page-container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -270,11 +292,7 @@ span.service-section-read-more a {
   line-height: 24px;
 }
 
-#contents {
-  background: url(absurdidad.png);
-}
-
-.contents-container {
+.reports-container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -282,7 +300,7 @@ span.service-section-read-more a {
   padding-bottom: 50px !important;
 }
 
-.contents-section {
+.reports-section {
   width: 100%;
   margin: 0 auto;
   padding: 0 !important;
@@ -295,14 +313,14 @@ span.service-section-read-more a {
   width: 31% !important;
 }
 
-.contents-overlay {
+.reports-overlay {
   width: 100% !important;
   height: 100%;
-  background: url(contents-overlay.png) repeat-x bottom;
+  background: url(reports-overlay.png) repeat-x bottom;
   display: block;
 }
 
-h2.contents-section-title {
+h2.reports-section-title {
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -322,7 +340,7 @@ h2.contents-section-title {
   transition: all 0.3s ease-in-out;
 }
 
-h2.contents-section-title a {
+h2.reports-section-title a {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
@@ -330,7 +348,7 @@ h2.contents-section-title a {
   text-shadow: 1px 1px 3px #000;
 }
 
-span.contents-section-read-more {
+span.reports-section-read-more {
   background: url(about-read-more.jpg) top center no-repeat;
   width: 100%;
   margin: 0 auto;
@@ -354,14 +372,14 @@ span.contents-section-read-more {
   transition: all 0.2s ease-in-out;
 }
 
-span.contents-section-read-more a {
+span.reports-section-read-more a {
   font-family: 'PT Sans', sans-serif;
   color: #fff;
   text-decoration: none;
   text-shadow: 1px 1px 3px #000;
 }
 
-.contents-section:hover h2.contents-section-title {
+.reports-section:hover h2.reports-section-title {
   bottom:60px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -370,7 +388,7 @@ span.contents-section-read-more a {
   transition: all 0.2s ease-in-out;
 }
 
-.contents-section:hover p.contents-section-content {
+.reports-section:hover p.reports-section-content {
   color:#fff;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -378,7 +396,7 @@ span.contents-section-read-more a {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-.contents-section:hover span.contents-section-read-more {
+.reports-section:hover span.reports-section-read-more {
   opacity:1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -402,7 +420,7 @@ span.contents-section-read-more a {
   margin: 0 auto;
   padding: 0;
   padding-top: 50px !important;
-  padding-bottom: 50px !important;
+  padding-bottom: 0px !important;
 }
 
 .events-section {
@@ -545,10 +563,6 @@ span.contents-section-read-more a {
   color: #f20272 !important;
 }
 
-#lesson {
-  background: url(absurdidad.png);
-}
-
 .lessons-container {
   width: 100%;
   margin: 0 auto;
@@ -598,7 +612,7 @@ span.contents-section-read-more a {
   text-align: center;
 }
 
-.contents-content p, .events-content p, .lesson-content p {
+.reports-content p, .events-content p, .lesson-content p {
   width: 100%;
   margin: 0 auto;
   padding: 0;

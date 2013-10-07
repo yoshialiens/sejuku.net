@@ -1,3 +1,4 @@
+<% if false %>
 <div id="slider" class="sl-slider-wrapper">
   <div class="sl-slider">
     <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
@@ -15,7 +16,12 @@
   <nav id="nav-dots" class="nav-dots">
     <span class="nav-dot-current"></span>
   </nav>
+<% end %>
 </div><!-- /slider-wrapper -->
+
+<header>
+  <%= image_tag "/assets/header.jpg" %>
+</header>
 
 <div class="navbar second">
   <div class="navbar-inner">
@@ -23,19 +29,19 @@
       <li><a href="/#">Top</a></li>
       <li><a href="/#about">About</a></li>
       <li><a href="/#service">Service</a></li>
-      <li><a href="/#contents">Contents</a></li>
+      <li><a href="/#reports">Reports</a></li>
 			<% if user_signed_in? %>
         <li><a href="/questions">Q&A</a></li>
 			<% else %>
         <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
       <% end %>
-      <li><a href="/#events">events</a></li>
+      <li><a href="/#events">Events</a></li>
       <li><a href="/#lesson">Lesson</a></li>
 			<li>
         <% if user_signed_in? %>
-          <%= link_to "logout", destroy_user_session_path, :method => :delete %>
+          <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
         <% else %>
-          <%= link_to "Facebook login", user_omniauth_authorize_path(:facebook) %>
+          <%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
         <% end %>
 			</li>
     </ul>
@@ -45,11 +51,17 @@
 <div name="about" id="about" class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">About us</h1>
-      <h3 class="twelve columns section-subtitle">侍エンジニア塾とは？</h3>
+      <h1 class="twelve columns section-title">Programming</h1>
+      <h3 class="twelve columns section-subtitle">エンジニアには月100万の価値がある！？</h3>
     </div>
   </div>
   <div class="row page-container">
+    システムの業界では『１人月』という単位を用います。<br/>
+    １人のＳＥが１カ月間で20日働いた場合を『１人月』と表現します。<br/>
+    <br/>
+    １人月の平均は80万円から120万円といわれています。<br/>
+    つまり、それぐらいの市場価値があるということです。<br/>
+    <br/>
     プログラミングを使えることは様々な面で役立ちます。<br/>
     <br/>
     『自分で考えたアイデアを形にできる』<br/>
@@ -59,10 +71,9 @@
     数多くの成功者たちが、英語と並んで、必須のスキルとして紹介されてます。<br/>
     プログラミングの基礎理解が様々な所で必須のスキルになりつつあります。<br/>
     <br/>
-    しかし、そんなプログラミングはただ漫然と独学するだけでは時間を浪費してしまいます。<br/>
-    かといって、大手のプログラミングスクールは費用もかかるし、無駄な資格をとったりと実践的ではない場合もあります。<br/>
-    <br/>
-    侍エンジニア塾では効果的にプログラミングを学習するための支援をしております。<br/>
+  </div>
+  <div class="center">
+    <%= image_tag "/assets/katana01.png" %>
   </div>
 </div>
 
@@ -73,15 +84,21 @@
       <h3 class="twelve columns section-subtitle">主なサービス</h3>
     </div>
   </div>
+  <div class="row page-container">
+    プログラミングはただ漫然と独学するだけでは時間を浪費してしまいます。<br/>
+    かといって、大手のプログラミングスクールは費用もかかるし、無駄な資格をとったりと実践的ではない場合もあります。<br/>
+    <br/>
+    侍エンジニア塾では効果的にプログラミングを学習するための支援をしております。<br/>
+  </div>
   <div class="row service-container clearfix">
     <div class="twelve columns services-header hide-for-960"></div>
     <div class="four columns service-section">
       <div class="twelve columns service-icon">
         <img width="50" height="50" src="/assets/icon1.png" class="attachment-post-thumbnail" alt="16">
       </div>
-      <h2 class="twelve columns service-section-title">Web Contents</h2>
+      <h2 class="twelve columns service-section-title">Reports</h2>
       <p class="twelve columns service-section-content">効果的なプログラミング学習方法をWebで無料公開しております。『Webサービスの作り方』『プログラマーとして仕事を獲得する方法』などの情報も公開しております。</p>
-      <span class="twelve columns service-section-read-more"><a href="#contents">Read More</a></span>
+      <span class="twelve columns service-section-read-more"><a href="#reports">Read More</a></span>
     </div>
     <div class="four columns service-section">
       <div class="twelve columns service-icon">
@@ -120,31 +137,31 @@
   </div>
 </div>
 
-<div name="contents" id="contents" class="section clearfix">
+<div name="reports" id="reports" class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Contents</h1>
+      <h1 class="twelve columns section-title">Reports</h1>
       <h3 class="twelve columns section-subtitle">僅か三ヶ月でプログラミングをマスターし、Webサービスをつくり、フリーランスエンジニアになる方法</h3>
     </div>
   </div>
-  <div class="row contents-container">
-    <div class="twelve columns contents-content">
+  <div class="row reports-container">
+    <div class="twelve columns reports-content">
       <p>
       プログラミング学習に関する情報は沢山ありますが、そのどれもが完全ではありません。<br/>
       ネット上にある情報や書籍から、質の高いものだけを抽出し、組み合わせ、『爆速』で学習できるカリキュラムを無料公開しました。<br/>
       また、『Webサービス開発の仕方』や『フリーランスとして独立方法』も公開します。<br/>
       </p>
     </div>
-    <div class="four columns contents-section mobile-four" style="background:url(/assets/contents1.png) repeat-x center">
-      <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title">
+    <div class="four columns reports-section mobile-four" style="background:url(/assets/reports1.png) repeat-x center">
+      <div class="reports-overlay">
+        <h2 class="twelve columns reports-section-title">
           <% if user_signed_in? %>
             <a href="/pages/content1">二週間でプログラミング基礎をマスターする方法</a>
           <% else %>
             <a data-toggle="modal" href="#modal-login">二週間でプログラミング基礎をマスターする方法</a>
           <% end %>
         </h2>
-        <span class="twelve columns contents-section-read-more">
+        <span class="twelve columns reports-section-read-more">
           <% if user_signed_in? %>
             <a href="/pages/content1">Read More</a>
           <% else %>
@@ -153,16 +170,16 @@
         </span>
       </div>
     </div>
-    <div class="four columns contents-section mobile-four" style="background:url(/assets/contents2.jpg) repeat-x center">
-      <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title">
+    <div class="four columns reports-section mobile-four" style="background:url(/assets/reports2.jpg) repeat-x center">
+      <div class="reports-overlay">
+        <h2 class="twelve columns reports-section-title">
           <% if user_signed_in? %>
             <a href="/pages/content2">二ヶ月でウェブサービスを作る方法</a>
           <% else %>
             <a data-toggle="modal" href="#modal-login">二ヶ月でウェブサービスを作る方法</a>
           <% end %>
         </h2>
-        <span class="twelve columns contents-section-read-more">
+        <span class="twelve columns reports-section-read-more">
           <% if user_signed_in? %>
             <a href="/pages/content2">Read More</a>
           <% else %>
@@ -171,16 +188,16 @@
         </span>
       </div>
     </div>
-    <div class="four columns contents-section mobile-four" style="background:url(/assets/contents3.jpg) repeat-x center">
-      <div class="contents-overlay">
-        <h2 class="twelve columns contents-section-title">
+    <div class="four columns reports-section mobile-four" style="background:url(/assets/reports3.jpg) repeat-x center">
+      <div class="reports-overlay">
+        <h2 class="twelve columns reports-section-title">
           <% if user_signed_in? %>
             <a href="/pages/content3">二週間でプログラマーとして飯を食う方法</a>
           <% else %>
             <a data-toggle="modal" href="#modal-login">二週間でプログラマーとして飯を食う方法</a>
           <% end %>
         </h2>
-        <span class="twelve columns contents-section-read-more">
+        <span class="twelve columns reports-section-read-more">
           <% if user_signed_in? %>
             <a href="/pages/content3">Read More</a>
           <% else %>
@@ -189,7 +206,44 @@
         </span>
       </div>
     </div>
+  </div>
+  <div class="center">
+    <%= image_tag "/assets/samurai_shadow.png" %>
+  </div>
+</div>
 
+<div name="lesson" id="lesson" class="section clearfix">
+  <div class="contain-to-grid clearfix">
+    <div class="twelve columns section-heading">
+      <h1 class="twelve columns section-title">Lesson</h1>
+      <h3 class="twelve columns section-subtitle">マンツーマンレッスン</h3>
+    </div>
+  </div>
+  <div class="row lessons-container">
+    <div class="twelve columns lesson-section">
+      <div class="one column lesson-left hide-for-small">
+      </div>
+      <div class="ten columns lesson">
+        <div class="twelve columns lesson-photo">
+          <img width="140" height="162" src="/assets/samurai.png" class="attachment-lesson-thumbnail wp-post-image" alt="lesson-2">                            </div>
+        <div class="twelve columns lesson-title">侍エンジニア塾<br/>3ヶ月マンツーマンコース</div>
+        <div class="twelve columns lesson-content">
+          <p>
+          <br/>
+          プログラミングスクールは数多くありますが、マンツーマンレッスンは非常に少ないです。<br/>
+          一人一人オーダーメイドな内容なので、あなたにあわせた効率的＆効果的な学習ができます。<br/>
+          <br/>
+          わからない事が有ると、平気で一日二日つかってしまいますが、マンツーマンレッスンならその日のうちに解決してしまいます。<br/>
+          独学時の三分の一以上の時間削減効果が期待できます。<br/>
+          <br/>
+          また、サービス開発や独立を経験した講師がおしえるので、Webサービス開発やフリーランスの仕事術まで、プログラミングを習得したその先までお教えできます。<br/>
+          </p>
+        </div>
+      </div>
+      <div class="one column lesson-right hide-for-small">
+      </div>
+      <div class="twelve columns events-read-more"><a href="/pages/lesson" title="Read the whole article: Hexic Is An Amazing Theme">Read More</a></div>
+    </div>
   </div>
 </div>
 
@@ -268,39 +322,7 @@
       </div>
     </div>
   </div>
-</div>
-
-<div name="lesson" id="lesson" class="section clearfix">
-  <div class="contain-to-grid clearfix">
-    <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Lesson</h1>
-      <h3 class="twelve columns section-subtitle">マンツーマンレッスン</h3>
-    </div>
-  </div>
-  <div class="row lessons-container">
-    <div class="twelve columns lesson-section">
-      <div class="one column lesson-left hide-for-small">
-      </div>
-      <div class="ten columns lesson">
-        <div class="twelve columns lesson-photo">
-          <img width="140" height="162" src="/assets/samurai.png" class="attachment-lesson-thumbnail wp-post-image" alt="lesson-2">                            </div>
-        <div class="twelve columns lesson-title">侍エンジニア塾<br/>3ヶ月マンツーマンコース</div>
-        <div class="twelve columns lesson-content">
-          <p>
-          <br/>
-          プログラミングスクールは数多くありますが、マンツーマンレッスンは非常に少ないです。<br/>
-          一人一人オーダーメイドな内容なので、あなたにあわせた効率的＆効果的な学習ができます。<br/>
-          <br/>
-          わからない事が有ると、平気で一日二日つかってしまいますが、マンツーマンレッスンならその日のうちに解決してしまいます。<br/>
-          独学時の三分の一以上の時間削減効果が期待できます。<br/>
-          <br/>
-          また、サービス開発や独立を経験した講師がおしえるので、Webサービス開発やフリーランスの仕事術まで、プログラミングを習得したその先までお教えできます。<br/>
-          </p>
-        </div>
-      </div>
-      <div class="one column lesson-right hide-for-small">
-      </div>
-      <div class="twelve columns events-read-more"><a href="/pages/lesson" title="Read the whole article: Hexic Is An Amazing Theme">Read More</a></div>
-    </div>
+  <div class="center">
+    <%= image_tag "/assets/katana02.png" %>
   </div>
 </div>

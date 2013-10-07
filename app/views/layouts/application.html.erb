@@ -15,19 +15,19 @@
       <li><a href="/">Top</a></li>
       <li><a href="/#about">About</a></li>
       <li><a href="/#service">Service</a></li>
-      <li><a href="/#contents">Contents</a></li>
+      <li><a href="/#contents">Reports</a></li>
 			<% if user_signed_in? %>
         <li><a href="/questions">Q&A</a></li>
 			<% else %>
         <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
       <% end %>
-      <li><a href="/#events">events</a></li>
+      <li><a href="/#events">Events</a></li>
       <li><a href="/#lesson">Lesson</a></li>
 			<li>
 			<% if user_signed_in? %>
-				<%= link_to "logout", destroy_user_session_path, :method => :delete %>
+				<%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 			<% else %>
-				<%= link_to "Facebook login", user_omniauth_authorize_path(:facebook) %>
+				<%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
 			<% end %>
 			</li>
     </ul>

@@ -6,6 +6,10 @@ html {
   overflow-y:scroll;
 }
 
+row {
+  width: 960px!important;
+}
+
 footer {
   position:fixed;
   bottom:0;
@@ -16,14 +20,14 @@ footer img {
   max-width: none;
 }
 
-header {
+header.lesson {
   text-align: center;
   background-position: bottom;
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
   background-color: #101010;
 }
 
-header img {
+header.lesson img {
   margin: 40px auto 0;
   width: 960px;
   height: 514px;
@@ -76,7 +80,7 @@ header img {
 }
 
 .border {
-  margin: 40px 0;
+  margin: 80px 0;
 }
 
 .title {
