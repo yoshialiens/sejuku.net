@@ -38,14 +38,4 @@ $(function() {
   return { init : init };
   })();
   Page.init();
-
-  // mouseover
-  $("#side-contents img").each(function(){
-    $(this).fadeTo("normal", 0.5);
-  });
-  $("#side-contents img").hover(function(){
-    $(this).fadeTo("normal", 1.0);
-  },function(){
-    $(this).fadeTo("normal", 0.5);
-  });
 });
