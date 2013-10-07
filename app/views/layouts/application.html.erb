@@ -22,7 +22,7 @@
         <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
       <% end %>
       <li><a href="/#events">Events</a></li>
-      <li><a href="/#lesson">Lesson</a></li>
+      <li><a href="/pages/lesson">Lesson</a></li>
 			<li>
 			<% if user_signed_in? %>
 				<%= link_to "Logout", destroy_user_session_path, :method => :delete %>

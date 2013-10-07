@@ -15,6 +15,14 @@
       ga('create', 'UA-44627319-1', 'sejuku.net');
       ga('send', 'pageview');
     </script>
+    <!--[if lt IE 7]> 
+      <style type="text/css">
+        #social_box {
+          position: absolute;
+          top: expression(eval(document.documentElement.scrollTop+300));
+        }
+      </style>
+    <![endif]-->
   <% end %>
 </head>
 <body>
@@ -41,6 +49,16 @@
     <div class="contents-inner">
       <%= yield %>
     </div>
+  </div>
+
+  <div id="side-contents">
+    <ul>
+      <li>
+        <%= link_to( image_tag( "/assets/lesson/report.png"), "/#reports" ) %>
+      </li>
+    </ul>
+    <div id="main"></div>
+    <div id="side"></div>
   </div>
 
   <footer>

@@ -98,3 +98,44 @@ header.lesson img {
 .space-big {
   height: 80px;
 }
+
+#side-contents{
+  width:960px;
+  margin:10px auto;
+}
+
+#side-contents ul{
+  width:165px;
+  padding:15px;
+  margin-left:-160px;
+  text-align:center;
+  position:fixed;
+  bottom:60px;
+  list-style-type:none;
+}
+
+#main{
+  width:660px;
+  float:left;
+}
+
+#side{
+  width:300px;
+  float:left;
+}
+
+@media only screen and (max-width:1280px) {
+  #side-contents ul{
+    padding:15px;
+    right: 0px;
+    bottom:50px;
+  }
+}
+
+@media only screen and (min-width:1280px) {
+  #side-contents ul{
+    padding:15px;
+    margin-left:-160px;
+    bottom:50px;
+  }
+}
