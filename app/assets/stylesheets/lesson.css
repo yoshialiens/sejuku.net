@@ -105,13 +105,13 @@ header.lesson img {
 }
 
 #side-contents ul{
-  width:165px;
-  padding:15px;
-  margin-left:-160px;
+  width:200px;
   text-align:center;
   position:fixed;
-  bottom:60px;
   list-style-type:none;
+  padding:15px;
+  right: 0px;
+  bottom:50px;
 }
 
 #main{
@@ -122,20 +122,4 @@ header.lesson img {
 #side{
   width:300px;
   float:left;
-}
-
-@media only screen and (max-width:1280px) {
-  #side-contents ul{
-    padding:15px;
-    right: 0px;
-    bottom:50px;
-  }
-}
-
-@media only screen and (min-width:1280px) {
-  #side-contents ul{
-    padding:15px;
-    margin-left:-160px;
-    bottom:50px;
-  }
 }
