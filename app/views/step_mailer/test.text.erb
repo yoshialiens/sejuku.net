@@ -1,0 +1,5 @@
+<%= @user.inspect %>
+
+<%= @user.lapsed_days %>
+
+<%= User::STEP_MAILS[@user.lapsed_days.to_s][1].gsub("name",@user.last_name + "さん") %>

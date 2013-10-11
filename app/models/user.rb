@@ -1,4 +1,22 @@
+# coding: utf-8
 class User < ActiveRecord::Base
+	STEP_MAILS = {
+		"0" =>
+["タイトル",
+"name
+est1testi111111111
+11111111111name1111111111111111"],
+		"2" =>
+["タイトル2",
+"name
+est1testi111111111
+111111111111111111111111111"],
+		"13" =>
+["タイトル13",
+"name
+est1testi111111111
+11111111111name1111111111111111"]
+	}
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
@@ -34,4 +52,7 @@ class User < ActiveRecord::Base
     end
   end
 
+	def lapsed_days
+		(Time.now - self.created_at).divmod(24*60*60)[0]
+	end
 end
