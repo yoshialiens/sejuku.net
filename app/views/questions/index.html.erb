@@ -10,7 +10,7 @@
         <div class="summary">
           <%= link_to question.title, question %>
           <br/>
-          <p class="answers-length">回答数<%= question.answers.length %></p>
+          <p class="answers-length">回答数<%= question.answers.length %>&nbsp;&nbsp;&nbsp;<%= question.created_at.strftime("%Y/%m/%d %I:%M%p") %></p>
           <div class="user-infomation">
             <p><%= question.user.name if question.user %></p>
             <%= image_tag question.user.provider_image_url if (question.user)? question.user.provider_image_url : false %>
