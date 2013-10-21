@@ -1,6 +1,6 @@
 # coding: utf-8
 class StepMailer < ActionMailer::Base
-  default from: "system@sejuku.sakura.ne.jp"
+  default from: "system@huv.sakura.ne.jp"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
