@@ -9,5 +9,5 @@ ActionMailer::Base.smtp_settings = {
 	:address => "huv.sakura.ne.jp",
 	:port => 587,
 	:authentication => :plain,
-	:user_name => "huv.sakura.ne.jp",
+	:user_name => "system@huv.sakura.ne.jp",
 	:password => 'Akibakim0i'}
