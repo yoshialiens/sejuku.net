@@ -17,6 +17,19 @@ est1testi111111111
 est1testi111111111
 11111111111name1111111111111111"]
 	}
+  STEP_MAIL_SGNATURE =
+"侍エンジニア塾 代表
+木内翔大
+
+公式ホームページ
+http://www.sejuku.net/
+
+マンツーマンレッスン
+http://www.sejuku.net/pages/lesson
+
+メールマガジン配信停止
+stop_mail
+"
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable,
   # :lockable, :timeoutable and :omniauthable
