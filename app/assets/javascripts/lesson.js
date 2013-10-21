@@ -7,6 +7,18 @@ $(function() {
   var already_pricing = false;
   var already_submit = false;
   var uid = uniqueID();
+  $.ajax({
+    type: 'post',
+    url: '/user_agents/viewed',
+    data: {
+      uid: uid,
+      section: "load"
+    },
+    success: function(data){
+    },
+    error: function(xhr, status){
+    }
+  });
   $("#about").mouseover(function(){
     if ( already_about == false ) {
       already_about = true;
