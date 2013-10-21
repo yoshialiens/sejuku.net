@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20131021102742) do
+ActiveRecord::Schema.define(:version => 20131021145655) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -34,6 +34,8 @@ ActiveRecord::Schema.define(:version => 20131021102742) do
     t.string   "uid",             :null => false
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.time     "first_time"
+    t.time     "last_time"
   end
 
   add_index "user_agents", ["uid"], :name => "index_user_agents_on_uid", :unique => true
