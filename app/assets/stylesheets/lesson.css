@@ -71,10 +71,10 @@ header.lesson img {
   background-position: center top!important;
   background: url(lesson/background.gif);
   min-height:1024px;
+  text-align: center;
 }
 
 .contents-inner {
-  width: 960px;
   margin: 0px auto;
   padding-bottom: 80px;
 }
