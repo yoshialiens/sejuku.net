@@ -15,7 +15,7 @@ class StepMailer < ActionMailer::Base
     @signature = User::STEP_MAIL_SIGNATURE.gsub("stop_mail", "http://dev.sejuku.net:3000/users/stop_mail/#{@user.nomail_token}")
     @signature = User::STEP_MAIL_SIGNATURE.gsub("stop_mail", "http://www.sejuku.net/users/stop_mail/#{@user.nomail_token}") if Rails.env.production?
 		if User::STEP_MAILS[user.lapsed_days.to_s]
-			mail to: "shota7180@gmail.com", subject: @subject
+			mail to: user.email, subject: @subject
 		end
   end
 end

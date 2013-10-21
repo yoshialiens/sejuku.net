@@ -227,7 +227,7 @@ stop_mail
 
   def self.send_step_mails
     User.all.each do |user|
-      StepMailer.send_step_mails(user).deliver if user.id == 7
+      StepMailer.send_step_mails(user).deliver
     end
   end
 end
