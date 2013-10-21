@@ -69,7 +69,7 @@ Sejuku::Application.configure do
 	Rails.application.config.middleware.use(
 		ExceptionNotifier,
 		:email_prefix => "Sejuku Exception Notification",
-		:sender_address => %{"system" <system@sejuku.sakura.ne.jp>},
+		:sender_address => %{"侍エンジニア塾.net" <system@huv.sakura.ne.jp>},
 		:exception_recipients => %w{shota7180@gmail.com}
 	)
 end
