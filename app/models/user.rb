@@ -40,6 +40,7 @@ est1testi111111111
                          provider_image_url:auth.info.image,
                          password:Devise.friendly_token[0,20]
                         )
+			user.nomail_token = SecureRandom.hex
     end
     user
   end

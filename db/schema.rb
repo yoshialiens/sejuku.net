@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130930122828) do
+ActiveRecord::Schema.define(:version => 20131017052618) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -48,8 +48,11 @@ ActiveRecord::Schema.define(:version => 20130930122828) do
     t.string   "provider_image_url"
     t.string   "first_name"
     t.string   "last_name"
+    t.boolean  "nomail"
+    t.string   "nomail_token",                           :null => false
   end
 
+  add_index "users", ["nomail_token"], :name => "index_users_on_nomail_token", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
