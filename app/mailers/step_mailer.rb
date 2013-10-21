@@ -7,7 +7,7 @@ class StepMailer < ActionMailer::Base
   #
   #   en.question.notification.subject
   #
-  def send(user)
+  def send_step_mails(user)
     @user = user
     return if @user.nomail
     @subject = User::STEP_MAILS[user.lapsed_days.to_s][0]
