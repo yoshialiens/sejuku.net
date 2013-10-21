@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  viewed_sections: MyString
+  uid: MyString
+
+two:
+  viewed_sections: MyString
+  uid: MyString

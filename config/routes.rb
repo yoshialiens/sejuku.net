@@ -7,11 +7,14 @@ Sejuku::Application.routes.draw do
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
 
-	match "pages/content1"
-	match "pages/content2"
-	match "pages/content3"
-	match "pages/ruby_install_mac"
-	match "pages/lesson"
+	get "pages/content1"
+	get "pages/content2"
+	get "pages/content3"
+	get "pages/ruby_install_mac"
+	get "pages/lesson"
+
+	post "user_agents/viewed"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

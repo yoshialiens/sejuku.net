@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130930122828) do
+ActiveRecord::Schema.define(:version => 20131021102742) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -28,6 +28,15 @@ ActiveRecord::Schema.define(:version => 20130930122828) do
     t.datetime "updated_at", :null => false
     t.string   "title"
   end
+
+  create_table "user_agents", :force => true do |t|
+    t.string   "viewed_sections", :null => false
+    t.string   "uid",             :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "user_agents", ["uid"], :name => "index_user_agents_on_uid", :unique => true
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => ""
