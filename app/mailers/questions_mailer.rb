@@ -1,6 +1,6 @@
 # coding: utf-8
 class QuestionsMailer < ActionMailer::Base
-  default from: "system@huv.sakura.ne.jp"
+  default from: "system@sejuku.sakura.ne.jp"
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:

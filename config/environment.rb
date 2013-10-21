@@ -6,8 +6,8 @@ Sejuku::Application.initialize!
 
 ActionMailer::Base.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
-	:address => "huv.sakura.ne.jp",
+	:address => "sejuku.sakura.ne.jp",
 	:port => 587,
 	:authentication => :plain,
-	:user_name => "system@huv.sakura.ne.jp",
+	:user_name => "system@sejuku.sakura.ne.jp",
 	:password => 'Akibakim0i'}

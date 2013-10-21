@@ -6,6 +6,8 @@ Sejuku::Application.routes.draw do
   resources :questions
 
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+	get "users/stop_mail/:token" => "users#stop_mail"
+	get "users/start_mail/:token" => "users#start_mail"
 
 	get "pages/content1"
 	get "pages/content2"

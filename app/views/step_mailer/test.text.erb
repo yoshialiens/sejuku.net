@@ -1,7 +1,0 @@
-<%= @user.inspect %>
-
-<%= @user.lapsed_days %>
-
-<%= User::STEP_MAILS[@user.lapsed_days.to_s][1].gsub("name",@user.last_name + "さん") %>
-
-<%= User::STEP_MAIL_SIGNATURE.gsub("stop_mail", "/users/stop_mail/#{@user.nomail_token}") %>

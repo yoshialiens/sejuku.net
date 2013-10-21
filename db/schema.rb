@@ -15,15 +15,15 @@ ActiveRecord::Schema.define(:version => 20131021145655) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
-    t.string   "user_id"
-    t.string   "question_id"
+    t.integer  "user_id"
+    t.integer  "question_id"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
 
   create_table "questions", :force => true do |t|
     t.text     "body"
-    t.string   "user_id"
+    t.integer  "user_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "title"
@@ -59,8 +59,11 @@ ActiveRecord::Schema.define(:version => 20131021145655) do
     t.string   "provider_image_url"
     t.string   "first_name"
     t.string   "last_name"
+    t.boolean  "nomail"
+    t.string   "nomail_token",                           :null => false
   end
 
+  add_index "users", ["nomail_token"], :name => "index_users_on_nomail_token", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
 end
