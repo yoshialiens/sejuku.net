@@ -221,8 +221,9 @@ stop_mail
   end
 
 	def lapsed_days
+    start_time = Time.mktime(2013, 10, 21, 20, 0, 0)
 		(Time.now - self.created_at).divmod(24*60*60)[0]
-    0 if self.created_at < Time.mktime(2013, 10, 21, 20, 0, 0)
+    (start_time - self.created_at).divmod(24*60*60)[0] if self.created_at < start_time
 	end
 
   def self.send_step_mails
