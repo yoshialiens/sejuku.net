@@ -205,9 +205,9 @@ stop_mail
                          uid:auth.uid,
                          email:auth.info.email,
                          provider_image_url:auth.info.image,
-                         password:Devise.friendly_token[0,20]
+                         password:Devise.friendly_token[0,20],
+                         nomail_token: SecureRandom.hex
                         )
-			user.nomail_token = SecureRandom.hex
     end
     user
   end
