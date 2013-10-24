@@ -9,13 +9,17 @@
 <h1>user_agents</h1>
 <% avarage_reading_time = 0 %>
 <% avarage_section = 0 %>
+<% bounce = 0 %>
 <% @user_agents.each do |u| %>
 	<% avarage_reading_time += u.reading_time if u.reading_time.present? %>
 	<% avarage_section += u.viewed_sections.split(",").length %>
+	<% bounce += 1 if u.viewed_sections == "load" %>
 	<%= "#{u.created_at} #{u.viewed_sections} #{u.reading_time}" %>
 	<br/>
 <% end %>
 <%= "avarage reading_time = #{avarage_reading_time / @user_agents.length}" %>
 <br/>
 <%= "avarage section = #{avarage_section / @user_agents.length}" %>
+<br/>
+<%= "bounce rate = #{Float(bounce) / Float(@user_agents.length) * Float(100)}" %>
 <br/>
