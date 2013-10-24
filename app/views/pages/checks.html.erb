@@ -1,0 +1,21 @@
+<h1>users</h1>
+<% @users.each do |u| %>
+	<%= "#{u.created_at} #{u.name} #{u.uid}" %>
+	<br/>
+<% end %>
+<%= "length = #{@users.length}" %>
+<br/>
+
+<h1>user_agents</h1>
+<% avarage_reading_time = 0 %>
+<% avarage_section = 0 %>
+<% @user_agents.each do |u| %>
+	<% avarage_reading_time += u.reading_time if u.reading_time.present? %>
+	<% avarage_section += u.viewed_sections.split(",").length %>
+	<%= "#{u.created_at} #{u.viewed_sections} #{u.reading_time}" %>
+	<br/>
+<% end %>
+<%= "avarage reading_time = #{avarage_reading_time / @user_agents.length}" %>
+<br/>
+<%= "avarage section = #{avarage_section / @user_agents.length}" %>
+<br/>
