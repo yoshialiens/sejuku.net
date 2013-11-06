@@ -77,6 +77,8 @@ header.lesson img {
 .contents-inner {
   margin: 0px auto;
   padding-bottom: 80px;
+  width: 960px;
+  background: url(lesson/new/bg.png);
 }
 
 .border {
