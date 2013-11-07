@@ -31,16 +31,16 @@
       <div class="container">
         <ul class="nav">
           <li><a href="#about">侍エンジニア塾とは？</a></li>
-          <li><a href="#voice">お客様の声</a></li>
+          <li><a href="#teacher">講師紹介</a></li>
           <li><a href="#method">最強学習メソッド</a></li>
-          <li><a href="#support">手厚いサポート</a></li>
           <li><a href="#pricing">料金プラン</a></li>
+          <li><a href="#voice">お客様の声</a></li>
           <li><a href="#submit">体験申込み</a></li>
           <li>
           <% if user_signed_in? %>
             <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
           <% else %>
-            <%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
+            <%= link_to "Login", user_omniauth_authorize_path(:facebook) %>
           <% end %>
           </li>
         </ul>

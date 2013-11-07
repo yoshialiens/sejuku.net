@@ -78,7 +78,7 @@ header.lesson img {
   margin: 0px auto;
   padding-bottom: 80px;
   width: 960px;
-  background: url(lesson/new/bg.png);
+  /* background: url(lesson/new/bg.png); */
 }
 
 .border {
@@ -124,4 +124,8 @@ header.lesson img {
 #side{
   width:300px;
   float:left;
+}
+
+.reports-container {
+  background: url(lesson/new/des11_03.png);
 }
