@@ -68,6 +68,16 @@
     <div id="side"></div>
   </div>
 
+  <div id="modal-login" class="modal hide fade" tabindex="-1" data-width="760">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>ここから先はログインしてご覧ください。</h3>
+  </div>
+  <div class="modal-body center">
+    <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
+  </div>
+  </div>
+
   <footer>
     <%= image_tag "/assets/lesson/footer.gif" %>
   </footer>
