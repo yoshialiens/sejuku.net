@@ -39,58 +39,34 @@
   <%= image_tag "/assets/lesson/new/des11.png", :class => "description" %>
   <div class="space-big"></div>
   <%= image_tag "/assets/lesson/new/des11_02.png", :class => "description" %>
-  <div class="row reports-container">
+  <div class="row lesson-reports-container">
     <div class="four columns reports-section mobile-four" style="background:url(/assets/reports1.png) repeat-x center">
       <div class="reports-overlay">
         <h2 class="twelve columns reports-section-title">
-          <% if user_signed_in? %>
             <a href="/pages/content1">二週間でプログラミング基礎をマスターする方法</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">二週間でプログラミング基礎をマスターする方法</a>
-          <% end %>
         </h2>
         <span class="twelve columns reports-section-read-more">
-          <% if user_signed_in? %>
             <a href="/pages/content1">Read More</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">Read More</a>
-          <% end %>
         </span>
       </div>
     </div>
     <div class="four columns reports-section mobile-four" style="background:url(/assets/reports2.jpg) repeat-x center">
       <div class="reports-overlay">
         <h2 class="twelve columns reports-section-title">
-          <% if user_signed_in? %>
             <a href="/pages/content2">二ヶ月でウェブサービスを作る方法</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">二ヶ月でウェブサービスを作る方法</a>
-          <% end %>
         </h2>
         <span class="twelve columns reports-section-read-more">
-          <% if user_signed_in? %>
             <a href="/pages/content2">Read More</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">Read More</a>
-          <% end %>
         </span>
       </div>
     </div>
     <div class="four columns reports-section mobile-four" style="background:url(/assets/reports3.jpg) repeat-x center">
       <div class="reports-overlay">
         <h2 class="twelve columns reports-section-title">
-          <% if user_signed_in? %>
             <a href="/pages/content3">二週間でプログラマーとして飯を食う方法</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">二週間でプログラマーとして飯を食う方法</a>
-          <% end %>
         </h2>
         <span class="twelve columns reports-section-read-more">
-          <% if user_signed_in? %>
             <a href="/pages/content3">Read More</a>
-          <% else %>
-            <a data-toggle="modal" href="#modal-login">Read More</a>
-          <% end %>
         </span>
       </div>
     </div>

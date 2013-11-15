@@ -39,9 +39,7 @@ header.lesson img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
+
 }
 
 .lesson .navbar-inner {
@@ -127,6 +125,6 @@ header.lesson img {
   float:left;
 }
 
-.reports-container {
+.lesson-reports-container {
   background: url(lesson/new/des11_03.png);
 }
