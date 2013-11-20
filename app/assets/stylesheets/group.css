@@ -1,0 +1,129 @@
+html,body {
+  height:100%;
+}
+
+html {
+  overflow-y:scroll;
+}
+
+row {
+  width: 960px!important;
+}
+
+footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+}
+
+footer img {
+  max-width: none;
+}
+
+header.lesson {
+  text-align: center;
+  background-position: bottom;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
+  background-color: #101010;
+}
+
+header.lesson img {
+  margin: 40px auto 0;
+  width: 960px;
+  height: 514px;
+}
+
+.navbar.lesson .navbar-inner {
+  height: 48px;
+  border: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+
+}
+
+.lesson .navbar-inner {
+  background: url(lesson/navbar.png);
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+.lesson .container {
+  width: 960px!important;
+}
+
+.lesson .nav>li {
+  margin-right: 20px;
+}
+
+.lesson .nav>li>a {
+  color: #FEFEFE;
+  font-weight: bold;
+}
+
+.lesson .nav>li>a:hover {
+  color: #17c2ee;
+}
+
+.contents {
+  background-position: center top!important;
+  background: url(lesson/background.gif);
+  min-height:1024px;
+  text-align: center;
+}
+
+
+.contents-inner {
+  margin: 0px auto;
+  padding-bottom: 80px;
+  width: 960px;
+  /* background: url(lesson/new/bg.png); */
+}
+
+.border {
+  margin: 80px 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.space {
+  height: 40px;
+}
+
+.space-half {
+  height: 20px;
+}
+
+.space-big {
+  height: 80px;
+}
+
+#side-contents{
+  width:960px;
+  margin:10px auto;
+}
+
+#side-contents ul{
+  width:200px;
+  text-align:center;
+  position:fixed;
+  list-style-type:none;
+  padding:15px;
+  right: 0px;
+  bottom:50px;
+}
+
+#main{
+  width:660px;
+  float:left;
+}
+
+#side{
+  width:300px;
+  float:left;
+}
+
+.lesson-reports-container {
+}

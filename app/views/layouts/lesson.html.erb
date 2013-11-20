@@ -31,10 +31,10 @@
       <div class="container">
         <ul class="nav">
           <li><a href="#about">侍エンジニア塾とは？</a></li>
-          <li><a href="#teacher">講師紹介</a></li>
-          <li><a href="#method">最強学習メソッド</a></li>
-          <li><a href="#pricing">料金プラン</a></li>
           <li><a href="#voice">お客様の声</a></li>
+          <li><a href="#method">最強学習メソッド</a></li>
+          <li><a href="#support">手厚いサポート</a></li>
+          <li><a href="#pricing">料金プラン</a></li>
           <li><a href="#submit">体験申込み</a></li>
         </ul>
       </div>
@@ -42,7 +42,7 @@
   </div>
 
   <header class="lesson">
-    <%= image_tag "/assets/lesson/new/header.jpg" %>
+    <%= image_tag "/assets/lesson/header.jpg" %>
   </header>
 
   <div class="contents">
@@ -54,21 +54,11 @@
   <div id="side-contents">
     <ul>
       <li>
-        <%= link_to( image_tag( "/assets/lesson/report.png"), "#reports") %>
+        <%= link_to( image_tag( "/assets/lesson/report.png"), "/#reports", :target => "_blank" ) %>
       </li>
     </ul>
     <div id="main"></div>
     <div id="side"></div>
-  </div>
-
-  <div id="modal-login" class="modal hide fade" tabindex="-1" data-width="760">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-    <h3>ここから先はログインしてご覧ください。</h3>
-  </div>
-  <div class="modal-body center">
-    <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
-  </div>
   </div>
 
   <footer>
