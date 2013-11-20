@@ -2,8 +2,6 @@ $(function() {
   // User Agent Analytics
   var already_about = false;
   var already_voice = false;
-  var already_teacher = false;
-  var already_reports = false;
   var already_method = false;
   var already_support = false;
   var already_pricing = false;
@@ -30,40 +28,6 @@ $(function() {
         data: {
           uid: uid,
           section: "about"
-        },
-        success: function(data){
-        },
-        error: function(xhr, status){
-        }
-      });
-    }
-  });
-  $("#teacher").mouseover(function(){
-    if ( already_teacher == false ) {
-      already_teacher = true;
-      $.ajax({
-        type: 'post',
-        url: '/user_agents/viewed',
-        data: {
-          uid: uid,
-          section: "teacher"
-        },
-        success: function(data){
-        },
-        error: function(xhr, status){
-        }
-      });
-    }
-  });
-  $("#reports").mouseover(function(){
-    if ( already_reports == false ) {
-      already_reports = true;
-      $.ajax({
-        type: 'post',
-        url: '/user_agents/viewed',
-        data: {
-          uid: uid,
-          section: "reports"
         },
         success: function(data){
         },

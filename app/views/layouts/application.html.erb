@@ -50,7 +50,7 @@
     <h3>ここから先はログインしてご覧ください。</h3>
   </div>
   <div class="modal-body center">
-    <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
+    <%= link_to (image_tag "/assets/fb_login.gif"), "/users/auth/facebook?origin=/pages/lesson" %>
   </div>
 </div>
 

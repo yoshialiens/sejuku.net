@@ -190,7 +190,7 @@ stop_mail
   devise :database_authenticatable, :trackable, :omniauthable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :first_name, :last_name, :email, :password, :name, :provider, :uid, :provider_image_url, :nomail_token
+  attr_accessible :first_name, :last_name, :email, :password, :name, :provider, :uid, :provider_image_url ,:nomail_token
   # attr_accessible :title, :body
 
   def self.find_for_facebook_oauth(auth, signed_in_resource=nil)
@@ -204,6 +204,7 @@ stop_mail
                          provider:auth.provider,
                          uid:auth.uid,
                          email:auth.info.email,
+                         nomail_token: SecureRandom.hex,
                          provider_image_url:auth.info.image,
                          password:Devise.friendly_token[0,20],
                          nomail_token: SecureRandom.hex

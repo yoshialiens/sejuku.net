@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>侍エンジニア塾.net マンツーマンレッスン</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <% if ENV['RAILS_ENV'] == "production" %>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-44627319-1', 'sejuku.net');
+      ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 7]> 
+      <style type="text/css">
+        #social_box {
+          position: absolute;
+          top: expression(eval(document.documentElement.scrollTop+300));
+        }
+      </style>
+    <![endif]-->
+  <% end %>
+</head>
+<body>
+  <div class="navbar navbar-inverse navbar-fixed-top lesson">
+    <div class="navbar-inner">
+      <div class="container">
+        <ul class="nav">
+          <li><a href="#about">侍エンジニア塾とは？</a></li>
+          <li><a href="#teacher">講師紹介</a></li>
+          <li><a href="#method">最強学習メソッド</a></li>
+          <li><a href="#pricing">料金プラン</a></li>
+          <li><a href="#voice">お客様の声</a></li>
+          <li><a href="#submit">体験申込み</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <header class="group">
+    <%= image_tag "/assets/lesson/new/header.jpg" %>
+  </header>
+
+  <div class="contents">
+    <div class="contents-inner">
+      <%= yield %>
+    </div>
+  </div>
+
+  <div id="side-contents">
+    <ul>
+      <li>
+        <%= link_to( image_tag( "/assets/lesson/report.png"), "#reports") %>
+      </li>
+    </ul>
+    <div id="main"></div>
+    <div id="side"></div>
+  </div>
+
+  <div id="modal-login" class="modal hide fade" tabindex="-1" data-width="760">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>ここから先はログインしてご覧ください。</h3>
+  </div>
+  <div class="modal-body center">
+    <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
+  </div>
+  </div>
+
+  <footer>
+    <%= image_tag "/assets/lesson/footer.gif" %>
+  </footer>
+</body>
+</html>
