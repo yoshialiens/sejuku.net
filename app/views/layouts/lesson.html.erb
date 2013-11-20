@@ -36,13 +36,6 @@
           <li><a href="#pricing">料金プラン</a></li>
           <li><a href="#voice">お客様の声</a></li>
           <li><a href="#submit">体験申込み</a></li>
-          <li>
-          <% if user_signed_in? %>
-            <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
-          <% else %>
-            <%= link_to "Login", user_omniauth_authorize_path(:facebook) %>
-          <% end %>
-          </li>
         </ul>
       </div>
     </div>
@@ -61,7 +54,7 @@
   <div id="side-contents">
     <ul>
       <li>
-        <%= link_to( image_tag( "/assets/lesson/report.png"), "/#reports", :target => "_blank" ) %>
+        <%= link_to( image_tag( "/assets/lesson/report.png"), "#reports") %>
       </li>
     </ul>
     <div id="main"></div>
