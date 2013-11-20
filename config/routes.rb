@@ -13,6 +13,7 @@ Sejuku::Application.routes.draw do
 	get "pages/content2"
 	get "pages/content3"
 	get "pages/ruby_install_mac"
+	get "pages/group"
 	get "pages/lesson"
 
 	post "user_agents/viewed"
