@@ -21,7 +21,7 @@
         <li><a href="/questions">Q&A</a></li>
 			<=% else %>
         <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
-      <=% end %>
+      <=% end %-->
       <li><a href="/#events">Events</a></li>
       <li><a href="/pages/lesson">Lesson</a></li>
 			<li>
@@ -30,7 +30,7 @@
 			<=% else %>
 				<=%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
 			<=% end %>
-			</li-->
+			</li>
     </ul>
   </div>
 </div>
