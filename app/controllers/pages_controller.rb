@@ -1,6 +1,7 @@
 # coding: utf-8
 class PagesController < ApplicationController
-  layout "lesson", :only => [:lesson, :group]
+  layout "lesson", :only => [:lesson]
+  layout "group", :only => [:group]
 
   def lesson
     @title = "マンツーマンレッスン"
