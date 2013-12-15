@@ -24,13 +24,13 @@
       <=% end %-->
       <li><a href="/#events">Events</a></li>
       <li><a href="/pages/lesson">Lesson</a></li>
-			<li>
+			<!--li>
 			<=% if user_signed_in? %>
 				<=%= link_to "Logout", destroy_user_session_path, :method => :delete %>
 			<=% else %>
 				<=%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
 			<=% end %>
-			</li>
+			</li-->
     </ul>
   </div>
 </div>
