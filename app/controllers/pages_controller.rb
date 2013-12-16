@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     elsif action_name == 'group'
       "group"
     else
+      "application"
     end
   end
 
