@@ -3,6 +3,17 @@ class PagesController < ApplicationController
   layout "lesson", :only => [:lesson]
   layout "group", :only => [:group]
 
+  layout :select_layout
+
+  def select_layout
+    if action_name == 'lesson'
+      "lesson"
+    elsif action_name == 'group'
+      "group"
+    else
+    end
+  end
+
   def lesson
     @title = "マンツーマンレッスン"
     @directory = "/assets/lesson/"
