@@ -1,7 +1,7 @@
 # coding: utf-8
 class PagesController < ApplicationController
-  layout "lesson", :only => [:lesson]
-  layout "group", :only => [:group]
+  # layout "lesson", :only => [:lesson]
+  # layout "group", :only => [:group]
 
   layout :select_layout
 
