@@ -54,7 +54,7 @@ header img {
 }
 
 .second .nav li {
-  padding: 6px 12px;
+  padding: 6px 6px;
 }
 
 .second .nav li a {
@@ -116,6 +116,10 @@ h3.section-subtitle {
   max-width: 100%;
   min-width: 768px;
   margin: 0 auto !important;
+}
+
+.main_content {
+  
 }
 
 #service {
@@ -285,7 +289,7 @@ span.service-section-read-more a {
 .page-container {
   width: 100%;
   margin: 0 auto;
-  padding: 0;
+  padding: 8px;
   padding-top: 50px !important;
   padding-bottom: 50px !important;
   font-size: 20px;
@@ -310,7 +314,7 @@ span.service-section-read-more a {
   background: none;
   float: left !important;
   margin: 1%;
-  width: 31% !important;
+  width: 31.33% !important;
 }
 
 .reports-overlay {
