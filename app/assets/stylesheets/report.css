@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*---------------------
+reset
+---------------------*/
+* {
+  margin:0;
+  padding:0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote {
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;
+}
+article,aside,details,footer,header,hgroup,menu,nav,section,summary {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+}
+img {
+  border:none;
+  vertical-align:bottom;
+}
+li {
+  list-style:none inside none;
+}
+
+/*---------------------
+clearfix
+---------------------*/
+.pkg:after {
+  clear:both;
+  content:".";
+  display:block;
+  height:0;
+  visibility:hidden;
+}
+.pkg{
+	display:inline-block;
+}
+* html .pkg{
+	height:1%;
+}
+.pkg{
+	display:block;
+}
+
+/*---------------------
+base
+---------------------*/
+body, p, td, div {
+  color:#444;
+  font-size:12px;
+  line-height:140%;
+}
+
+/*---------------------
+start
+---------------------*/
+#method_wrap {
+  width:100%;
+  overflow:hidden;
+}
+header {
+  background-color:#000;
+}
+header h1 {
+  height:0;
+  overflow:hidden;
+}
+header p {
+  width:960px;
+  margin:10px auto;
+}
+.method_main {
+  width:960px;
+  margin:0 auto;
+}
+.method_form {
+  width:600px;
+  margin:20px auto;
+  border:5px #97d0e1 solid;
+  border-radius:10px;
+}
+.form_frame {
+  border:12px solid #cceaf0;
+  border-radius:6px;
+  padding:25px 20px 20px;
+}
+fieldset {
+  border:none;
+}
+dl.input_box {
+  margin-bottom:15px;
+}
+dl.input_box dt label {
+  vertical-align:middle;
+  font-size:14px;
+  font-weight:bold;
+}
+dl.input_box dt span.require {
+  color:#f60;
+}
+dl.input_box dt {
+  float:left;
+  width:120px;
+  padding-top:7px;
+}
+dl.input_box dd {
+  float:left;
+  margin-right:10px;
+}
+dl.input_box input.dd_01 {
+  width:120px;
+}
+dl.input_box input.dd_02 {
+  width:305px;
+}
+input {
+  border-radius:5px;
+  padding:0.4em;
+  font-size:16px;
+  border:2px #ccc solid;
+  outline:0 none;
+}
+input:focus {
+  border-color:#97d0e1;
+}
+.center-text {
+  text-align:center;
+}
+.center-text .formBtn {
+  width:200px;
+  height:40px;
+  background-color:#2e77ad;
+  margin-top:15px;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+}
+.center-text input.formBtn:hover {
+  background-color:#3495de;
+}
+footer {
+  text-align:center;
+}
