@@ -10,8 +10,8 @@ class PagesController < ApplicationController
       "lesson"
     elsif action_name == 'group'
       "group"
-    elsif action_name == 'report'
-      "report"
+    # elsif action_name == 'report'
+    #   "report"
     else
       "application"
     end
