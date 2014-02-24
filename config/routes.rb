@@ -18,6 +18,7 @@ Sejuku::Application.routes.draw do
   get "pages/group"
 	get "pages/checks"
   get "pages/report"
+  get "pages/base"
 
 	post "user_agents/viewed"
 
