@@ -1,250 +1,263 @@
-<% if user_signed_in? %>
+<% #if user_signed_in? %>
 　
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">二週間でプログラミング基礎をマスターする方法</h1>
+      <h1 class="twelve columns section-title">作りたいWebサービスが作れるようになるためには？</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    このページでは『2週間でプログラミング基礎をマスターする方法』について触れていきます。<br/>
-    文章量はあまり多くないので、サクッと読めますが、実践して実力をつけるには、この内容に沿ってそれなりの時間が必要です。<br/>
-    私はプログラミングをマンツーマンで教える塾を経営しているのですが、だいたいWebサービスを自力で作れるようになるまでに、200-300時間はかかると思います。独学だと、その倍位は最低でもかかるでしょう。<br/>
-    月100時間の学習時間でしたら3ヶ月目でようやくつかめてくる。という感じでしょうか。<br/>
-    このレポートではそんな限られた時間を有効方用して頂き、『無駄のない学習』をして頂きたくて書きました。<br/>
+    ・プログラミングとは【データ】を【操作】すること。<br>
+    ・Webサービスがつくれるということは【データの操作】をおぼえること。<br>
+    ・プログラムの処理はおおまかに下記4つの工程に分けることができる<br><br><br>
+
+    　1.【 入力 】<br>
+    　2.【 処理 】<br>
+    　3.【 保存 】<br>
+    　4.【 出力 】<br><br>
+
+    この4つの方法を覚えることが、<br>
+    「プログラミングができる」「Webサービスをつくれる」ことの第一歩になります。<br><br>
+
+    Googleを例にすると<br>
+    ++++++++++++++++++++++++++++++++++++++<br>
+    1．【 入力 】<br>
+    ユーザーが検索窓に<br>
+    キーワードを入力して「検索」ボタンを押す<br><br>
+
+    2．【 処理 】<br>
+    入力された内容を<br>
+    データ保存されているサイトの中から<br>
+    検索条件にあったサイトを探し出す<br><br>
+
+    3．【 保存 】<br>
+    検索されたキーワード情報を保存する<br>
+    （検索回数など順位付けなどに使うため）<br><br>
+
+    4．【 出力 】<br>
+    該当のキーワードにあったサイトを<br>
+    データベースから取り出し、<br>
+    検索結果画面に表示する<br>
+    ++++++++++++++++++++++++++++++++++++++<br><br>
+
+    この4つの方法を把握して<br>
+    処理方法の「書き方」を必要なときに調べることができれば<br>
+    プログラミングを書くことができるようになります。<br><br>
+
+    プログラミング言語の違いは<br>
+    書き方の違いなので、流れを理解できれば<br>
+    どんな言語でも扱えるようになります。
   </div>
 </div>
 
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Webサービスが作れるということ</h1>
+      <h1 class="twelve columns section-title">データベース</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    この章では私が実際に体験した『プログラミングができて、Webサービスが作れたことによる自由』について書いて行きます。<br/>
-    <br/>
-    ①表現の自由<br/>
-    　自分が思いついたアイデアを、自分ひとりで形にすることが出来ます。<br/>
-    　するとその形をもとに他の人にもうまく伝えられるので、協力を得やすいです。<br/>
-    　何よりも、自分のアイデアを形にしていくプロセス自体が楽しいです。<br/>
-    ②お金の自由<br/>
-    　Webサービスが作れると沢山の仕事があります。<br/>
-    　エンジニアの仕事を時給換算すると2000~5000円はもらえることが普通です。<br/>
-    　また、『手に職』がある状態なので、フリーランスとして独立することも容易で、<br/>
-    　複数の仕事を掛け持ちすることで収入も安定します。<br/>
-    ③時間の自由<br/>
-    　お金の自由があり、フリーランス状態だと、時間の制約がなくなります。<br/>
-    　『月50~100時間働いて、空いた時間で好きなことをする。』<br/>
-    　ということが出来ます。<br/>
-    ④地理の自由<br/>
-    　在宅の仕事であれば、基本場所は選ばないので、地方に住むことも出来ますし、<br/>
-    　旅行しながら旅先で仕事することも容易です。<br/>
-    ⑤選択の自由<br/>
-    　ここまで4つの自由が、人生を選ぶ範囲が広くなります。<br/>
-    　『スキなときに、スキなところで、スキな人と』を実現できます。<br/>
-    　思わぬチャンスがあったときに、すぐに飛びつけるのがいいところです。<br/>
-    <br/>
-    Webサービスを作ることができて、フリーランスエンジニアとして働いていると、ご覧のような自由が望めます。<br/>
-    仮に①だけでも、自分の趣味になりますし、誰かと一緒にモノづくりができる楽しさがあります。<br/>
-    また、アプリやサービスを作って起業も夢ではありません。<br/>
+    データを保存しておく場所を【データベース】といいます。<br>
+    Webサービスで利用するデータは全て<br>
+    【データベース】に保存されています。<br>
+    データベースは情報の格納に大きく4つの機能を備えています。<br><br>
+
+    　1.CREATE【 追加する 】<br>
+    　2.READ【 取得する 】<br>
+    　3.UPDATE【 更新する 】<br>
+    　4.DELETE【 削除する 】<br><br>
+
+    この頭文字をあわせてCRUD（クラッド）と呼ばれる操作が<br>
+    データベースの基本となります。<br><br>
+
+    　1.データベースにデータを【 新規追加 】する、<br>
+    　2.そのデータを【 取得 】（書き出す）する、<br>
+    　3.そのデータを変更し【 更新 】（上書き登録）する、<br>
+    　4.そのデータを【 削除 】する、<br><br>
+
+    データベースへのアクセスについては<br>
+    以下の3ステップで接続します。<br><br>
+
+    　1.接続<br>
+    　2.使用<br>
+    　3.切断<br><br>
+
+    データを操作するということが理解できれば<br>
+    プログラミングへの理解が深まります。
   </div>
 </div>
 
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Webサービスを作る上で必要な技術</h1>
+      <h1 class="twelve columns section-title">Webサービスの全体構成</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    プログラミングの基礎に入る前に、簡単に『Webサービスを作る上で必要な技術』を整理します。<br/>
-<br/>
-    ■Webサービス開発に使われている技術<br/>
-    Webサービス開発で使われる技術は大きく2つに分けられます。<br/>
-<br/>
-    ●クライアントサイド<br/>
-    Webブラウザ、やスマホアプリケーション上で動き、表示や、入力などを受け付けるインターフェイスの部分です。<br/>
-    ブラウザの場合 HTML + CSS + JavaScript<br/>
-    アプリの場合 Objective C / JAVA<br/>
-<br/>
-    ●サーバーサイド<br/>
-    サービスのデータを管理する部分です。<br/>
-    言語 Ruby / PHP<br/>
-    フレームワーク Ruby on Rails / CakePHP<br/>
-    データベース MySQL / MongoDB<br/>
-    料理店の口コミサイト、食べログを例にすると、ユーザーが触る画面はクライアントサイド、表示される店舗データを管理するのがサーバーサイドとなります。<br/>
-<br/>
-    ■このレポートでは以下の構成で学習を進めて行きます。<br/>
-    ●クライアントサイド<br/>
-    HTML, CSS, JavaScript<br/>
-    ●サーバーサイド<br/>
-    言語 Ruby<br/>
-    フレームワーク Ruby on Rails<br/>
-    データベース MySQL<br/>
-    以上の技術を基礎レベルだけ使えるようになると、Webサービスは開発できます。<br/>
+    Webサービスを動かすためのコンピューターを「サーバー」といいます。<br><br>
+
+    Webサービスを作って動かすためには<br>
+    サーバーが必要でサーバーは下記の要素で構成されています。<br><br>
+
+    +++++++++++++++++++++++++++++++++++<br>
+      ・OS（オペレーティングシステム）<br>
+      ・DB（データベース）<br>
+      ・Webサーバー<br>
+      ・フレームワーク<br>
+      ・Webアプリケーション<br>
+      ・UI（ユーザーインターフェース）<br>
+    +++++++++++++++++++++++++++++++++++<br><br>
+
+    ・OS（オペレーティングシステム）<br>
+      サーバーの動きを管理する<br><br>
+
+    ・DB（データベース）<br>
+      データを保管、管理する<br><br>
+
+    ・Webサーバー<br>
+      Webサービスの動きを管理する<br><br>
+
+    ・フレームワーク<br>
+      Webサービスの動きをサポートする<br><br>
+
+    ・Webアプリケーション<br>
+      Webサービスの機能、本体<br><br>
+
+    ・UI（ユーザーインターフェース）<br>
+      表示される画面
   </div>
 </div>
 
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Rubyのインストール</h1>
+      <h1 class="twelve columns section-title">変数と定数</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    プログラミング基礎の学習方法に入る前に、そのために必要なrubyのインストールが必要です。<br/>
-    お使いのPCによって方法が異なりますので、以下を参考にグーグルなどで調べながらやってみて下さい。<br/>
-<br/>
-    Max OS Xの場合<br/>
-    実はMac OS Xにはもともとruby1.8.7が入っています。<br/>
-    ですが、このバージョンだと少し古くて、のちのち不都合が出てくるので、ruby1.9.3をインストールします。<br/>
-    インストール方法は様々なので、いくつか記事を紹介しておきます。<br/>
-    <a href="/pages/ruby_install_mac" target="_blank">http://www.sejuku.net/pages/ruby_install_mac</a><br/>
-    <a href="http://www.shck3.com/?p=409" target="_blank">http://www.shck3.com/?p=409</a><br/>
-<br/>
-    Windowsの場合<br/>
-    <a href="http://www.rubylife.jp/install/" target="_blank">http://www.rubylife.jp/install/</a><br/>
-    こちらのホームページのインストール手順に沿って進めて下さい。<br/>
-    今回インストールしていただきたいのはruby1.9.3です。<br/>
-<br/>
-    実は環境構築は、お使いのPCによって環境が違いますので、躓くポイントが人それぞれです。<br/>
-    何かわからないこと、躓いた事があれば、<a href="/questions" target="_blank">こちらのQ&Aフォームをお使い下さい。</a><br/>
+    ■変数<br>
+    単一のデータを表す。一時的にデータを保管するために使う。<br><br>
+
+    後で使うデータを、とっておくために使う。<br><br>
+
+    ■定数<br>
+    変わらないもの（変わってしまうと困るもの）<br>
+    頭文字がアルファベットの大文字<br><br>
+
+    ※一度代入した値は変更ができない。<br><br>
+
+    ・使い方の例<br>
+    ECサイトでたくさんの商品を販売している場合<br>
+    消費税計算を行う際、直接計算式を記述していれば<br>
+    膨大な箇所の変更を行わなければいけない。<br>
+    【 a = b * 1.05】<br><br>
+
+    1箇所でも見落としがあると不具合がでてしまうので<br>
+    この場合定数を定義しておけば<br>
+    書き換えは1箇所ですみます。<br><br>
+
+    【 TAX = 1.05 】<br>
+    【 a = b * TAX 】<br><br>
+
+    ■覚えておく必要がある単語<br><br>
+
+    ・関数<br>
+    命令<br><br>
+
+    ・引数<br>
+    命令実行に必要な材料<br><br>
+
+    ・戻り値<br>
+    命令実行後の結果
   </div>
 </div>
 
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">プログラミング基礎の習得方法</h1>
+      <h1 class="twelve columns section-title">配列とハッシュ</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    さぁいよいよ、プログラミング基礎の習得です。<br/>
-<br/>
-    昔はプログラミングを学習するといったら、書籍が中心でした。<br/>
-    しかし、近頃はわかりやすいWEBサイトや、プログラミング学習に特化したWEBサービスがいくつもあります。<br/>
-    今回はそのなかでも、特に効率的に学習できるプログラミング動画サービスをご紹介いたします。<br/>
-<br/>
-    ■ドットインストール<br/>
-    <a href="http://dotinstall.com/" target="_blank">http://dotinstall.com/</a><br/>
-    このサービスは「3分動画でマスターするプログラミング学習サイト」というキャッチコピー通り、プログラミングを動画で学習できます。<br/>
-    ドットインストールのいいところは、書籍と違って、手順が動画で見れるので、誰でも学習することができます。<br/>
-    しかも、すべてのメジャーな言語に対応していて、すべて無料です。<br/>
-    これをやれば、その言語の基礎がなんとなくわかるようになります。<br/>
-    もちろん3分動画なので、解説は必要最低限しかありません。<br/>
-    あわせて参考書なども買うと効率的に学習できるでしょう。<br/>
-<br/>
-    ■WEBサービス開発に必要なプログラミング基礎と教材<br/>
-    ●HTML/CSS<br/>
-    ドットインストール<br/>
-    <a href="http://dotinstall.com/lessons/basic_html" target="_blank">http://dotinstall.com/lessons/basic_html</a><br/>
-    <a href="http://dotinstall.com/lessons/basic_css" target="_blank">http://dotinstall.com/lessons/basic_css</a><br/>
-    お勧め書籍<br/>
-    <a href="http://www.amazon.co.jp/dp/4844329669/" target="_blank">http://www.amazon.co.jp/dp/4844329669/</a><br/>
-    習得時間目安<br/>
-    20時間<br/>
-<br/>
-    ●JavaScript<br/>
-    ドットインストール<br/>
-    <a href="http://dotinstall.com/lessons/basic_javascript" target="_blank">http://dotinstall.com/lessons/basic_javascript</a><br/>
-    お勧め書籍<br/>
-    <a href="http://www.amazon.co.jp/exec/obidos/ASIN/4839941874" target="_blank">http://www.amazon.co.jp/exec/obidos/ASIN/4839941874</a><br/>
-    習得時間目安<br/>
-    15時間<br/>
-<br/>
-    ●Ruby<br/>
-    ドットインストール<br/>
-    <a href="http://dotinstall.com/lessons/basic_ruby" target="_blank">http://dotinstall.com/lessons/basic_ruby</a><br/>
-    お勧めサイト<br/>
-    <a href="http://www.rubylife.jp/" target="_blank">http://www.rubylife.jp/</a><br/>
-    お勧め書籍<br/>
-    <a href="http://www.amazon.co.jp/dp/4797372273" target="_blank">http://www.amazon.co.jp/dp/4797372273</a><br/>
-    習得時間目安<br/>
-    15時間<br/>
-<br/>
-    ドットインストールを進めながら、詳しく知りたいところを書籍やWEBサイトで調べて進めていけば、<br/>
-    およそ50時間ほどでWEBサービスを作るのに必要なプログラミング基礎は身につきます。<br/>
-    この基礎を身につけた上にWEBフレームワークの基礎を積めばWEBサービスは作れます。<br/>
-<br/>
-    ※WEBフレームワークとは<br/>
-    WEBフレームワークとは「WEBサービスのフレームワーク（骨組み、枠組み、足場)」を提供するものです。<br/>
-    ようは、WEBサービスを作るうえでの「土台」となる部分です。<br/>
-    わかりやすくいうと、WEBサービスを作るには何万何十万行のコードを書かなくてはなりません。<br/>
-    すると、プログラマーはそんなに大変なことをしているのかというと、そうではありません。<br/>
-    WEBフレームワークを導入することにより、あらかじめ何万何十万行のコードが書かれているので、それを数行で活用するだけですみます。<br/>
-    おかげで数千行～数万行書くだけでWEBサービスが作れます。<br/>
-    このWEBフレームワークには沢山の種類があります。<br/>
-    このレポートでは現在最も人気があり、もっともアップデートが盛んな「Ruby On Rails」というフレームワークを紹介いたします。<br/>
+    ■配列<br><br>
+
+    文字列や数値など、さまざまなデータを並べて<br>
+    ひとまとまりにしたもの<br><br>
+
+    先頭から0から順に番号を振ったもの<br>
+    同類のデータをひとまとめにして扱うときに使う<br><br>
+
+    例　配列 score<br>
+    ※テストの点数をデータとしてまとめる<br><br>
+
+    score[0] = 96<br>
+    score[1] = 89<br>
+    score[2] = 92<br>
+    score[3] = 75<br>
+    score[4] = 81<br><br>
+
+    ※インデックスが1番からではなく0番から始まることを覚えておきましょう。<br><br>
+
+    ■ハッシュ<br><br>
+
+    配列の値を取り出すキーに文字列を用いる配列<br>
+    添字に憶えやすい【キーワード】を割り当てたもの<br><br>
+
+    例　連想配列 cat<br>
+    ※ねこの特徴をまとめる<br><br>
+
+    cat[ookii] = おおきい<br>
+    cat[chiisai] = ちいさい<br>
+    cat[debu] = でぶ<br>
+    cat[noppo] = のっぽ<br>
+    cat[chibi] = ちび
   </div>
 </div>
 
 <div class="section clearfix">
   <div class="contain-to-grid clearfix">
     <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">何かわからないことがあったら</h1>
+      <h1 class="twelve columns section-title">メソッド、クラスとインスタンス</h1>
       <h3 class="twelve columns section-subtitle"></h3>
     </div>
   </div>
   <div class="row page-container">
-    ここまで駆け足でプログラミング基礎をお教えしてきました。<br/>
-    言葉足らずでわから無いところも多いでしょう。<br/>
-    ということで、聞きたいことがある方は専用の<a href="/questions" target="_blank">Q&Aフォーム</a>にメッセージを下さい。<br/>
-    このレポートに関することやプログラミングに関することで聞きたいことがあれば『何でも』答えさせていただきます。<br/>
-    また、セミナーや無料相談なんかもやっているのでぜひご利用ください。<br/>
-    『とにかく早くマスターしたい』『一人で学ぶ自信がない』という方は、マンツーマンレッスンがお勧めです。<br/>
-    <a href="/pages/lesson" target="_blank">こちらから</a>受講無料相談を受け付けております。</br>
-    <br/>
-    少しでも早く、貴方にプログラミングを習得していただいて、Webサービスを作る楽しさを感じて欲しいと願っております。<br/>
-    最後までお読み頂いてありがとうございます。<br/>
-    またQ&Aやセミナー、無料相談などでお会いできることを楽しみにしております^^<br/>
+    ■オブジェクト<br><br>
+
+    オブジェクトとは【データ】と【処理】をまとめてオブジェクト（もの）として捉える<br>
+    プログラミングの考え方、設計方法のことです。<br><br>
+
+    ■メソッド<br><br>
+
+    オブジェクトは【データ】と【処理】で、<br>
+    メソッドはその【処理】のこと。<br><br>
+
+    「テレビ」をオブジェクトとすれば、<br>
+    「画面を映す」「チャンネルを変える」といった操作【処理】がメソッドになります。<br><br>
+
+    ■クラスとインスタンス<br><br>
+
+    クラスが【設計図】とすればインスタンスはその【設計図】を使って<br>
+    【作られたもの】になります<br><br>
+
+    設計図と製品という関係になります。<br><br>
+
+
+    例　家を建てる場合<br><br>
+
+    クラスが家の【設計図】<br><br>
+
+    設計図を元に立てられた家がインスタンス【作られたもの】になります。
   </div>
 </div>
 
-<% else %>
-<div class="section clearfix">
-  <div class="contain-to-grid clearfix">
-    <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">二週間でプログラミング基礎をマスターする方法</h1>
-      <h3 class="twelve columns section-subtitle"></h3>
-    </div>
-  </div>
-  <div class="row page-container">
-    このページでは『2週間でプログラミング基礎をマスターする方法』について触れていきます。<br/>
-    文章量はあまり多くないので、サクッと読めますが、実践して実力をつけるには、この内容に沿ってそれなりの時間が必要です。<br/>
-    私はプログラミングをマンツーマンで教える塾を経営しているのですが、だいたいWebサービスを自力で作れるようになるまでに、200-300時間はかかると思います。独学だと、その倍位は最低でもかかるでしょう。<br/>
-    月100時間の学習時間でしたら3ヶ月目でようやくつかめてくる。という感じでしょうか。<br/>
-    このレポートではそんな限られた時間を有効方用して頂き、『無駄のない学習』をして頂きたくて書きました。<br/>
-  </div>
-</div>
+<% #else %>
 
-<div class="section clearfix">
-  <div class="contain-to-grid clearfix">
-    <div class="twelve columns section-heading">
-      <h1 class="twelve columns section-title">Webサービスが作れるということ</h1>
-      <h3 class="twelve columns section-subtitle"></h3>
-        <div class="row page-container">
-        <br/><br/><br/><br/> 
-        </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal-scrollable" style="z-index: 1060;">
-  <div id="modal-login" class="modal fade in modal-backdrop content" tabindex="1" data-width="760">
-    <div class="modal-header">
-     <h3>ここから先はログインしてご覧ください。</h3>
-    </div>
-    <div class="modal-body center">
-      <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
-    </div>
-  </div>
-</div>
 <div class="modal-backdrop fade in" style="z-index: 1050;"></div>
-<% end %>
+<% #end %>
 
