@@ -1,4 +1,4 @@
-<% if user_signed_in? %>
+<!--% if user_signed_in? %-->
 
 <div class="section clearfix">
 	<div class="contain-to-grid clearfix">
@@ -273,7 +273,7 @@
 	</div>
 </div>
 
-<% else %>
+<!--% #else %>
 <div class="section clearfix">
 	<div class="contain-to-grid clearfix">
 		<div class="twelve columns section-heading">
@@ -325,9 +325,9 @@
      <h3>ここから先はログインしてご覧ください。</h3>
     </div>
     <div class="modal-body center">
-      <%= link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
+      <%= #link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
     </div>
   </div>
 </div>
 <div class="modal-backdrop fade in" style="z-index: 1050;"></div>
-<% end %>
+<% #end %-->
