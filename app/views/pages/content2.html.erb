@@ -1,4 +1,3 @@
-<!--% if user_signed_in? %-->
 
 <div class="section clearfix">
 	<div class="contain-to-grid clearfix">
@@ -272,62 +271,3 @@
 		またQ&Aやセミナー、無料相談などでお会いできることを楽しみにしております^^<br/>
 	</div>
 </div>
-
-<!--% #else %>
-<div class="section clearfix">
-	<div class="contain-to-grid clearfix">
-		<div class="twelve columns section-heading">
-			<h1 class="twelve columns section-title">二ヶ月でウェブサービスを作る方法</h1>
-			<h3 class="twelve columns section-subtitle"></h3>
-		</div>
-	</div>
-	<div class="row page-container">
-		このぺーじではプログラミング初心者が最短でWEBサービスを作る方法をお教えします。<br/>
-		HTML,CSS,Rubyの基礎がわかった状態で300時間ほど学習すれば、独学でもWEBサービスを作ることは出来ます。<br/>
-		WEBサービス開発に必要なWEBフレームワークの学習方法と、<br/>
-		具体的なWEBサービス開発の仕方までお教えします。<br/>
-	</div>
-</div>
-
-
-<div class="section clearfix">
-	<div class="contain-to-grid clearfix">
-		<div class="twelve columns section-heading">
-			<h1 class="twelve columns section-title">Ruby on Railsのインストール</h1>
-			<h3 class="twelve columns section-subtitle"></h3>
-		</div>
-	</div>
-	<div class="row page-container">
-    Railsの学習に入る前にRailsをインストールする必要があります。<br/>
-    今回使用するのはrails3.2です。<br/>
-    <br/>
-    Mac OS Xの場合<br/>
-    　gem install rails -v "3.2.13"<br/>
-    以上のコマンドを打つだけでインストールが完了します。<br/>
-    処理中は数分画面が変わらないこともありますが、気長に待ちましょう。<br/>
-    　<br/>
-    Windowsの場合<br/>
-    <a href="http://www.rubylife.jp/railsinstall/" target="_blank">http://www.rubylife.jp/railsinstall/</a><br/>
-    こちらを参考にして下さい。<br/>
-    　gem install rails<br/>
-    を打つときにバージョンを指定する必要が有るので、<br/>
-    　gem install rails -v "3.2.13"<br/>
-    以上のように打ち込んで下さい。<br/>
-    <br/>
-    環境構築は、お使いのPCによって環境が違いますので、躓くポイントが人それぞれです。<br/>
-    何かわからないこと、躓いた事があれば、<a href="/questions" target="_blank">こちらのQ&Aフォームをお使い下さい。</a><br/>
-	</div>
-</div>
-
-<div class="modal-scrollable" style="z-index: 1060;">
-  <div id="modal-login" class="modal fade in modal-backdrop content" tabindex="1" data-width="760">
-    <div class="modal-header">
-     <h3>ここから先はログインしてご覧ください。</h3>
-    </div>
-    <div class="modal-body center">
-      <%= #link_to (image_tag "/assets/fb_login.gif"), user_omniauth_authorize_path(:facebook) %>
-    </div>
-  </div>
-</div>
-<div class="modal-backdrop fade in" style="z-index: 1050;"></div>
-<% #end %-->
