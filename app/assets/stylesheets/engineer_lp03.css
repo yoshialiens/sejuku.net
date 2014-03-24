@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*---------------------
+reset
+---------------------*/
+* {
+  margin:0;
+  padding:0;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, p, blockquote {
+  font-family:'Lucida Grande','Hiragino Kaku Gothic ProN',Meiryo, sans-serif;
+}
+article,aside,details,footer,header,hgroup,menu,nav,section,summary {
+  display: block;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-size:100%;
+}
+img {
+  border:none;
+  vertical-align:bottom;
+}
+li {
+  list-style:none inside none;
+}
+a {
+  outline:none;
+}
+
+/*---------------------
+clearfix
+---------------------*/
+.pkg:after {
+  clear:both;
+  content:".";
+  display:block;
+  height:0;
+  visibility:hidden;
+}
+.pkg{
+	display:inline-block;
+}
+* html .pkg{
+	height:1%;
+}
+.pkg{
+	display:block;
+}
+
+/*---------------------
+base
+---------------------*/
+body, p, td, div {
+  color:#444;
+  font-size:12px;
+  line-height:140%;
+}
+
+/*---------------------
+start
+---------------------*/
+.lp_wrap {
+  width:960px;
+  margin:0 auto 70px;
+}
+.ins_01 {
+  width: 960px;
+  height:327px;
+  background:url(/assets/report03/il_04.gif) 0 0 no-repeat;
+  position:relative;
+}
+.btn_url_01 {
+  position: absolute;
+  top:202px;
+  left:50px;
+}
+.btn_url_01 a {
+  background:url(/assets/report03/btn_url_01.gif) 0 0 no-repeat;
+  display:block;
+  width:500px;
+  height:0;
+  padding-top:18px;
+  overflow:hidden;
+}
+.btn_url_01 a:hover {
+  background-position: 0 -18px;
+}
+.btn_url_02 {
+  position: absolute;
+  top:275px;
+  left:50px;
+}
+.btn_url_02 a {
+  background:url(/assets/report03/btn_url_02.gif) 0 0 no-repeat;
+  display:block;
+  width:500px;
+  height:0;
+  padding-top:18px;
+  overflow:hidden;
+}
+.btn_url_02 a:hover {
+  background-position: 0 -18px;
+}
+.ins_02 {
+  width: 960px;
+  height:443px;
+  background:url(/assets/report03/il_05.gif) 0 0 no-repeat;
+  position:relative;
+}
+.btn_url_03 {
+  position: absolute;
+  top:202px;
+  left:50px;
+}
+.btn_url_03 a {
+  background:url(/assets/report03/btn_url_03.gif) 0 0 no-repeat;
+  display:block;
+  width:500px;
+  height:0;
+  padding-top:18px;
+  overflow:hidden;
+}
+.btn_url_03 a:hover {
+  background-position: 0 -18px;
+}
+.btn_url_04 {
+  position: absolute;
+  top:275px;
+  left:50px;
+}
+.btn_url_04 a {
+  background:url(/assets/report03/btn_url_04.gif) 0 0 no-repeat;
+  display:block;
+  width:500px;
+  height:0;
+  padding-top:18px;
+  overflow:hidden;
+}
+.btn_url_04 a:hover {
+  background-position: 0 -18px;
+}
+
+
+
+
+
+/*---------------------
+form
+---------------------*/
+.contact_box {
+  width:960px;
+  height:403px;
+  background:url(/assets/report03/bg_form_01.gif) 0 0 no-repeat;
+  position:relative;
+}
+.btn_form {
+  position:absolute;
+  top:135px;
+  left:250px;
+}
+.btn_form a {
+  background:url(/assets/report03/btn_form_01.gif) 0 0 no-repeat;
+  display:block;
+  width:470px;
+  height:0;
+  padding-top:95px;
+  overflow:hidden;
+}
+.btn_form a:hover {
+  background-position:0 -95px;
+}
+.btn_about {
+  position:absolute;
+  bottom:67px;
+  left:50px;
+}
+.btn_about a {
+  background:url(/assets/report03/btn_form_02.gif) 0 0 no-repeat;
+  display:block;
+  width:420px;
+  height:0;
+  padding-top:55px;
+  overflow:hidden;
+}
+.btn_about a:hover {
+  background-position:0 -55px;
+}
+.btn_eminar {
+  position:absolute;
+  bottom:67px;
+  right:50px;
+}
+.btn_eminar a {
+  background:url(/assets/report03/btn_form_03.gif) 0 0 no-repeat;
+  display:block;
+  width:420px;
+  height:0;
+  padding-top:55px;
+  overflow:hidden;
+}
+.btn_eminar a:hover {
+  background-position:0 -55px;
+}
+
+/*---------------------
+footer
+---------------------*/
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
