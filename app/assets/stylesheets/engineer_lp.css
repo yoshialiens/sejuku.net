@@ -29,6 +29,11 @@ a {
 /*---------------------
 clearfix
 ---------------------*/
+header img {
+  height: 960px !important;
+  width: 125px !important;
+}
+
 .pkg:after {
   clear:both;
   content:".";
