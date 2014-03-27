@@ -14,6 +14,10 @@ class PagesController < ApplicationController
       "report"
     elsif action_name == 'report1'
       "report"
+    elsif action_name == 'report2'
+      "report"
+    elsif action_name == 'report3'
+      "report"
     else
       "application"
     end

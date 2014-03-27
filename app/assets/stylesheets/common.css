@@ -21,6 +21,14 @@
   background: url("debut_light.png");
 }
 
+.mr-t20 {
+margin-top: 20px;
+}
+
+.mr-t30 {
+margin-top: 30px;
+}
+
 header {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
   background-color: #101010;
@@ -823,3 +831,5 @@ a {
 .modal-header h3 {
   color: #1CA5AF;
 }
+
+
