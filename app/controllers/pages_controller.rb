@@ -10,7 +10,7 @@ class PagesController < ApplicationController
       "lesson"
     elsif action_name == 'group'
       "group"
-    elsif action_name == 'report'
+    elsif action_name == 'report','report1','report2','report3'
       "report"
     else
       "application"
@@ -29,6 +29,21 @@ class PagesController < ApplicationController
 
   def report
     @title = "メールマガジン"
+    @directory = "/assets/report/"
+  end
+
+  def report1
+    @title = "独学メソッド①"
+    @directory = "/assets/report/"
+  end
+
+  def report2
+    @title = "独学メソッド②"
+    @directory = "/assets/report/"
+  end
+
+  def report3
+    @title = "独学メソッド③"
     @directory = "/assets/report/"
   end
 
