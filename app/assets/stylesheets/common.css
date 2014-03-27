@@ -29,6 +29,10 @@ margin-top: 20px !important;
 margin-top: 30px !important;
 }
 
+.mr-t60 {
+margin-top: 60px !important;
+}
+
 header {
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
   background-color: #101010;
