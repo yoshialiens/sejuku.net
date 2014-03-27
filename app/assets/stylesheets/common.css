@@ -22,11 +22,11 @@
 }
 
 .mr-t20 {
-margin-top: 20px;
+margin-top: 20px !important;
 }
 
 .mr-t30 {
-margin-top: 30px;
+margin-top: 30px !important;
 }
 
 header {
