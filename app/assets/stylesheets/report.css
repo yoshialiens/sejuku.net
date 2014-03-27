@@ -61,7 +61,14 @@ start
   overflow:hidden;
 }
 header {
-  background-color:#000;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0.00, #0e0e0e), color-stop(1.0, #232323));
+  background-color: #101010;
+  padding: 0!important;
+  margin: 0!important;
+  width: 100%!important;
+  text-align: center;
+/*  background-color:#000;
+  width:100%;*/
 }
 header h1 {
   height:0;
