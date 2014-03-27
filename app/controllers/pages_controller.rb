@@ -10,7 +10,9 @@ class PagesController < ApplicationController
       "lesson"
     elsif action_name == 'group'
       "group"
-    elsif action_name == 'report','report1','report2','report3'
+    elsif action_name == 'report'
+      "report"
+    elsif action_name == 'report1'
       "report"
     else
       "application"
