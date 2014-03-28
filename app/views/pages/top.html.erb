@@ -34,11 +34,6 @@
       <li><a href="/pages/group">Group</a></li>
       <li><a href="/pages/lesson">Lesson</a></li>
 			<li>
-        <% if user_signed_in? %>
-          <%= link_to "Logout", destroy_user_session_path, :method => :delete %>
-        <% else %>
-          <%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
-        <% end %>
 			</li>
     </ul>
   </div>
@@ -135,7 +130,6 @@
         プログラミング学習に関する情報は沢山ありますが、そのどれもが完全ではありません。<br/>
         ネット上にある情報や書籍から、質の高いものだけを抽出し、組み合わせ、『爆速』で学習できるカリキュラムを無料公開しました。<br/>
         また、『Webサービス開発の仕方』や『フリーランスとして独立方法』も公開します。<br/>
-        ※Facebookアカウントにてログインとなります。<br>
         </p>
       </div>
       <div class="four columns reports-section mobile-four" style="background:url(/assets/reports1.png) repeat-x center">
@@ -181,7 +175,7 @@
         <h3 class="twelve columns section-subtitle">グループレッスン</h3>
       </div>
     </div>
-    <div class="row lessons-container">
+    <a href="/pages/group"><div class="row lessons-container">
       <div class="twelve columns lesson-section">
         <div class="one column lesson-left hide-for-small">
         </div>
@@ -207,7 +201,7 @@
         </div>
         <div class="twelve columns events-read-more"><a href="/pages/group" title="Read the whole article: Hexic Is An Amazing Theme">Read More</a></div>
       </div>
-    </div>
+    </div></a>
   </div>
 
   <div name="lesson" id="lesson" class="section clearfix">
@@ -217,6 +211,7 @@
         <h3 class="twelve columns section-subtitle">マンツーマンレッスン</h3>
       </div>
     </div>
+    <a href="/pages/lesson">
     <div class="row lessons-container">
       <div class="twelve columns lesson-section">
         <div class="one column lesson-left hide-for-small">
@@ -242,7 +237,7 @@
         </div>
         <div class="twelve columns events-read-more"><a href="/pages/lesson" title="Read the whole article: Hexic Is An Amazing Theme">Read More</a></div>
       </div>
-    </div>
+    </div></a>
   </div>
 
   <div name="events" id="events" class="section clearfix">
@@ -265,7 +260,7 @@
       <div class="twelve columns events-section">
         <div class="twelve columns events-date hide-for-small">
           <div class="two columns date-left"></div>
-          <div class="three columns date-middle">2013/12/15 at 13:30 - 16:00</div>
+          <div class="three columns date-middle">2014/03/29 at 13:30 - 16:00</div>
           <div class="seven columns date-right"></div>
         </div>
         <div class="twelve columns events-content">
@@ -293,7 +288,7 @@
       <div class="twelve columns events-section">
         <div class="twelve columns events-date hide-for-small">
           <div class="two columns date-left"></div>
-          <div class="three columns date-middle">2013/12/22 at 13:30 - 16:00</div>
+          <div class="three columns date-middle">2014/00/00 at 13:30 - 16:00</div>
           <div class="seven columns date-right"></div>
         </div>
         <div class="twelve columns events-content">
