@@ -7,7 +7,7 @@ class PagesController < ApplicationController
 
   def select_layout
     if action_name == 'lesson'
-      "lesson"
+      "group"
     elsif action_name == 'group'
       "group"
     elsif action_name == 'report'
@@ -24,13 +24,14 @@ class PagesController < ApplicationController
   end
 
   def lesson
-    @title = "マンツーマンレッスン"
-    @directory = "/assets/lesson/"
+    @title = "侍エンジニア塾マンツーマンレッスン"
+    @directory = "/assets/group/"
   end
 
   def group
-    @title = "グループレッスン"
-    @directory = "/assets/group/"
+    redirect_to :action => "lesson"
+    # @title = "グループレッスン"
+    # @directory = "/assets/group/"
   end
 
   def report
