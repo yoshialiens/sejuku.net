@@ -18,6 +18,8 @@ class PagesController < ApplicationController
       "report"
     elsif action_name == 'report3'
       "report"
+    elsif action_name == 'interview'
+      "interview"
     else
       "application"
     end

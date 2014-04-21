@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>侍エンジニア塾.net</title>
+  <%= stylesheet_link_tag    "application", "report", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="/">侍エンジニア塾</a>
+    <ul class="nav pull-right">
+      <li><a href="/">Top</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#service">Service</a></li>
+      <li><a href="/#reports">Reports</a></li>
+			<!--
+      <=% if user_signed_in? %>
+        <li><a href="/questions">Q&A</a></li>
+			<=% else %>
+        <li><a data-toggle="modal" href="#modal-login">Q&A</a></li>
+      <=% end %-->
+      <li><a href="/#events">Events</a></li>
+      <li><a href="/pages/group">Group</a></li>
+      <li><a href="/pages/lesson">Lesson</a></li>
+			<!--li>
+			<=% if user_signed_in? %>
+				<=%= link_to "Logout", destroy_user_session_path, :method => :delete %>
+			<=% else %>
+				<=%= link_to "Facebook Login", user_omniauth_authorize_path(:facebook) %>
+			<=% end %>
+			</li-->
+    </ul>
+  </div>
+</div>
+
+<div class="container demo-2 interview-container">
+  <%= yield %>
+</div>
+
+<div id="footer">
+  <p>
+  Copyright Samurai Enginer School 2013
+  </p>
+</div>
+
+<div id="modal-login" class="modal hide fade" tabindex="-1" data-width="760">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>ここから先はログインしてご覧ください。</h3>
+  </div>
+  <div class="modal-body center">
+    <%= link_to (image_tag "/assets/fb_login.gif"), "/users/auth/facebook?origin=/pages/lesson" %>
+  </div>
+</div>
+
+</body>
+</html>

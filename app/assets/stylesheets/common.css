@@ -839,6 +839,10 @@ a {
 /*---------------------
 start
 ---------------------*/
+.interview-container {
+  background-image: url('lesson/background.gif');
+}
+
 .lp_wrap {
     width: 960px;
     margin: 0px auto 70px;
