@@ -839,6 +839,11 @@ a {
 /*---------------------
 start
 ---------------------*/
+.lp_wrap {
+    width: 960px;
+    margin: 0px auto 70px;
+    background-color: ;
+}
 
 .interview-logo {
   width:920px;
@@ -854,7 +859,7 @@ start
 .main-photo {
   width:960px;
   height:656px;
-  background:url(../img/main_photo.jpg) 0 0 no-repeat;
+  background:url(/assets/interview/main_photo.jpg) 0 0 no-repeat;
   display:block;
   position:relative;
 }
@@ -923,12 +928,12 @@ section {
 
 .text-flame_00 .text h4 {
   margin: 10px auto 20px;
-  background: url(../img/q.png) 0 0 no-repeat;
+  background: url(/assets/interview/q.png) 0 0 no-repeat;
   padding: 10px 0 0 40px;
 }
 
 .text-flame_00 .text p {
-  background: url(../img/a.png) 0 0 no-repeat;
+  background: url(/assets/interview/a.png) 0 0 no-repeat;
   padding: 10px 0 0 40px;
 }
 
@@ -948,12 +953,12 @@ section {
 
 .text-flame_01 .text h4 {
   margin: 10px auto 20px;
-  background: url(../img/q.png) 0 0 no-repeat;
+  background: url(/assets/interview/q.png) 0 0 no-repeat;
   padding: 10px 0 0 40px;
 }
 
 .text-flame_01 .text p {
-  background: url(../img/a.png) 0 0 no-repeat;
+  background: url(/assets/interview/a.png) 0 0 no-repeat;
   padding: 10px 0 0 40px;
 }
 
@@ -986,12 +991,12 @@ section {
 
 .text-flame_02 .text h4 {
   margin: 10px auto 20px;
-  background: url(../img/q.png) 0 0 no-repeat;
+  background: url(/assets/interview/q.png) 0 0 no-repeat;
   padding: 10px 0 0 40px;
 }
 
 .text-flame_02 .text p {
-  background: url(../img/a.png) 0 0 no-repeat;
+  background: url(/assets/interview/a.png) 0 0 no-repeat;
   padding: 10px 0 0 40px; 
 }
 
@@ -1012,7 +1017,7 @@ section {
 }
 
 .counseling {
-  background: url(../img/counseling.gif) 0 0 no-repeat;
+  background: url(/assets/interview/counseling.gif) 0 0 no-repeat;
   width: 734px;
   height:610px;
   margin: 0 auto;
