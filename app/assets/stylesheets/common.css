@@ -901,7 +901,6 @@ section {
 .text-flame {
   width: 920px;
   overflow: hidden;
-  background-color: ;
   margin: 0 auto 40px;
 }
 
@@ -916,7 +915,6 @@ section {
   width: 900px;
   overflow: hidden;
   margin: 20px auto;
-  background-color: ;
 }
 
 .text-flame_00 .text {
@@ -939,7 +937,6 @@ section {
   height: auto;
   overflow: hidden;
   margin: 20px auto;
-  background-color: ;
 }
 
 .text-flame_01 .text {
@@ -978,7 +975,6 @@ section {
   height: auto;
   overflow: hidden;
   margin: 20px auto;
-  background-color: ;
 }
 
 .text-flame_02 .text {
