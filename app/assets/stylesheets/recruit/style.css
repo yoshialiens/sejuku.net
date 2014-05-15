@@ -1992,17 +1992,19 @@ div.light_square .pp_close {
     height: auto;
     overflow: hidden;
     padding: 1%;
-    background-color: rgba(225, 225, 225, 0.7);
+    background-color: rgba(25, 25, 25, 0.4);
     position: relative;
     bottom: 230px;
 }
 
 .profile-img-inline h3 {
     font-size: 20px;
+    color: #eee;
 }
 
 .profile-img-inline p {
     font-size: 14px;
     line-height: 1;
+    color: #eee;
 }
 /* レスポンシブ対応 */
