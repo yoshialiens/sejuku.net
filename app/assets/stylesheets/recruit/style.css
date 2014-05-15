@@ -1988,9 +1988,10 @@ div.light_square .pp_close {
 }
 
 .profile-img-inline {
-    width: 100%;
+    width: 98%;
     height: auto;
     overflow: hidden;
+    padding: 0 1%;
     background-color: rgba(225, 225, 225, 0.7);
     position: relative;
     bottom: 200px;
@@ -2001,6 +2002,7 @@ div.light_square .pp_close {
 }
 
 .profile-img-inline p {
-        line-height: 1;
+    font-size: 14px;
+    line-height: 1;
 }
 /* レスポンシブ対応 */
