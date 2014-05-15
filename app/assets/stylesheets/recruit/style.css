@@ -1975,3 +1975,22 @@ div.light_square .pp_close {
 
   z-index: 9999;
 }
+
+
+/* ===================================================== */
+/* Profile Image
+/* ===================================================== */
+
+.profile-img {
+    width: 506px;
+    height: 673px;
+    overflow: hidden;
+}
+
+.profile-img-inline {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background-color: rgba(225,225,225,0.3);
+}
+/* レスポンシブ対応 */
