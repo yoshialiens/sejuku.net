@@ -177,7 +177,7 @@ h1.section-title:after,
 }
 
 .image-callout {
-     background-image: url('../img/bg-callout.jpg');
+     background-image: url('bg-callout.jpg');
 }
 
 .video-button {
@@ -218,7 +218,7 @@ h1.section-title:after,
 /* ===================================================== */
 
 .testimonials {
-    background: url('../img/recruit_bg01.jpg');
+    background: url('recruit_bg01.jpg');
     background-size: cover;
     background-position: center center;
     color: #fff;
@@ -529,7 +529,7 @@ h1.section-title:after,
 }
 
 .video-placeholder {
-    background-image: url('../img/slider/video-placeholder.jpg');
+    background-image: url('slider/video-placeholder.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -1101,7 +1101,7 @@ form .error:focus {
 /* ===================================================== */
 
 .price-head {
-    background: url('../img/patterns/pat-4.png');
+    background: url('patterns/pat-4.png');
     color: #fff;
     height: 102px;
     padding: 20px 0 0;
@@ -1275,12 +1275,12 @@ form .error:focus {
 }
 
 .bx-wrapper .bx-loading {
-  background-image: url(../img/bxslider/bx_loader.gif);
+  background-image: url(bxslider/bx_loader.gif);
 }
 
 .bx-wrapper .bx-controls .bx-next,
 .bx-wrapper .bx-controls .bx-prev {
-  background-image: url(../img/bxslider/controls.png);
+  background-image: url(bxslider/controls.png);
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
