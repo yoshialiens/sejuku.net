@@ -68,7 +68,7 @@ class PagesController < ApplicationController
     @directory = "/assets/interview/"
   end
 
-def recruit
+  def recruit
     @title = "侍エンジニア塾 - リクルーティング"
     @directory = "/assets/recruit/"
   end
