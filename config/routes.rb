@@ -23,6 +23,7 @@ Sejuku::Application.routes.draw do
   get "pages/report"
   get "pages/base"
   get "pages/interview"
+  get "pages/recruit"
 
 	post "user_agents/viewed"
 

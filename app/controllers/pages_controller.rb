@@ -20,6 +20,8 @@ class PagesController < ApplicationController
       "report"
     elsif action_name == 'interview'
       "interview"
+      elsif action_name == 'recruit'
+      "recruit"
     else
       "application"
     end
@@ -64,6 +66,11 @@ class PagesController < ApplicationController
   def interview
     @title = "インタビュー：平井真哉さん"
     @directory = "/assets/interview/"
+  end
+
+def recruit
+    @title = "侍エンジニア塾 - リクルーティング"
+    @directory = "/assets/recruit/"
   end
 
 	def checks

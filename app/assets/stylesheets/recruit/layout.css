@@ -1,0 +1,417 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+/* #Media Queries
+================================================== */
+
+
+
+.left{text-align:left;}
+.right{text-align:right;}
+.center{text-align:center;}
+
+
+
+/* align */
+.alnC{ text-align:center; }
+.alnL{ text-align:left; }
+.alnR{ text-align:right; }
+
+/* vertical-align */
+.valnT{ vertical-align:top; }
+.valnM{ vertical-align:middle; }
+.valnB{ vertical-align:bottom; }
+
+/* float */
+.fltL{ float:left; }
+.fltR{ float:right; }
+.clear{ clear:both; }
+
+/* img float*/
+.imgL img { float:left; margin:0px 10px 10px 0px; }
+.imgR img { float:right; margin:0px 0px 10px 10px; }
+
+/* box-centaring */
+.cbox{
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+
+.hover80 a:hover img,
+a.hover80:hover img,
+a:hover img.hover60 {
+filter: alpha(opacity=80);
+-moz-opacity:0.80;
+opacity:0.80;
+}
+
+.hover60 a:hover img,
+a.hover60:hover img,
+a:hover img.hover60 {
+filter: alpha(opacity=60);
+-moz-opacity:0.60;
+opacity:0.60;
+}
+
+/* 3. floatbox clearing
+================================================== */
+.clearfix{
+	zoom:1;
+}
+.clearfix:after{
+	content:".";
+	display:block;
+	clear:both;
+	height:0;
+	visibility:hidden;
+	font-size: 0.1em;
+	line-height: 0;
+}
+
+
+/* 4. utility margin setting
+================================================== */
+/* margin-top */
+.mt0{ margin-top:0 !important; }
+.mt5{ margin-top:5px !important; }
+.mt10{ margin-top:10px !important; }
+.mt-10{ margin-top:-10px !important; }
+.mt15{ margin-top:15px !important; }
+.mt20{ margin-top:20px !important; }
+.mt25{ margin-top:25px !important; }
+.mt30{ margin-top:30px !important; }
+.mt-30{ margin-top:-30px !important; }
+.mt40{ margin-top:40px !important; }
+.mt100{ margin-top:100px !important; }
+.mt150{ margin-top:150px !important; }
+.mt200{ margin-top:200px !important; }
+
+/* margin-right */
+.mr0{ margin-right:0 !important; }
+.mr5{ margin-right:5px !important; }
+.mr10{ margin-right:10px !important; }
+.mr15{ margin-right:15px !important; }
+.mr20{ margin-right:20px !important; }
+.mr23{ margin-right:23px !important; }
+.mr25{ margin-right:25px !important; }
+.mr30{ margin-right:30px !important; }
+.mr40{ margin-right:40px !important; }
+.mr45{ margin-right:45px !important; }
+.mr50{ margin-right:50px !important; }
+.mr60{ margin-right:60px !important; }
+.mr95{ margin-right:95px !important; }
+
+/* margin-bottom */
+.mb0{ margin-bottom:0 !important; }
+.mb5{ margin-bottom:5px !important; }
+.mb8{ margin-bottom:8px !important; }
+.mb10{ margin-bottom:10px !important; }
+.mb15{ margin-bottom:15px !important; }
+.mb20{ margin-bottom:20px !important; }
+.mb25{ margin-bottom:25px !important; }
+.mb30{ margin-bottom:30px !important; }
+.mb40{ margin-bottom:40px !important; }
+.mb50{ margin-bottom:50px !important; }
+.mb75{ margin-bottom:75px !important; }
+.mb100{ margin-bottom:100px !important; }
+.mb150{ margin-bottom:150px !important; }
+
+/* margin-left */
+
+.ml-15{ margin-left:-15px !important; }
+.ml0{ margin-left:0 !important; }
+.ml5{ margin-left:5px !important; }
+.ml10{ margin-left:10px !important; }
+.ml15{ margin-left:15px !important; }
+.ml20{ margin-left:20px !important; }
+.ml25{ margin-left:25px !important; }
+.ml30{ margin-left:30px !important; }
+.ml35{ margin-left:35px !important; }
+.ml50{ margin-left:50px !important; }
+
+
+/* 5. utility padding setting
+================================================== */
+/* padding-top */
+.pt0{ padding-top:0 !important; }
+.pt5{ padding-top:5px !important; }
+.pt10{ padding-top:10px !important; }
+.pt15{ padding-top:15px !important; }
+.pt20{ padding-top:20px !important; }
+.pt25{ padding-top:25px !important; }
+.pt30{ padding-top:30px !important; }
+
+/* padding-right */
+.pr0{ padding-right:0 !important; }
+.pr5{ padding-right:5px !important; }
+.pr10{ padding-right:10px !important; }
+.pr15{ padding-right:15px !important; }
+.pr20{ padding-right:20px !important; }
+.pr25{ padding-right:25px !important; }
+.pr30{ padding-right:30px !important; }
+
+/* padding-bottom */
+.pb0{ padding-bottom:0 !important; }
+.pb5{ padding-bottom:5px !important; }
+.pb10{ padding-bottom:10px !important; }
+.pb15{ padding-bottom:15px !important; }
+.pb20{ padding-bottom:20px !important; }
+.pb25{ padding-bottom:25px !important; }
+.pb30{ padding-bottom:30px !important; }
+.pb40{ padding-bottom:40px !important; }
+
+/* padding-left */
+.pl0{ padding-left:0 !important; }
+.pl5{ padding-left:5px !important; }
+.pl10{ padding-left:10px !important; }
+.pl15{ padding-left:15px !important; }
+.pl20{ padding-left:20px !important; }
+.pl25{ padding-left:25px !important; }
+.pl30{ padding-left:30px !important; }
+
+.pd0{ padding:0px !important; }
+.pd30{ padding:30px !important; }
+
+.bold{
+	font-weight:bold;
+}
+
+.fs80p{font-size:80%;}
+.fs120p{font-size:120%;}
+.fs150p{font-size:150%;}
+
+.w10p{width:10%;}
+.w15p{width:15%;}
+.w20p{width:20%;}
+.w25p{width:25%;}
+.w30p{width:30%;}
+.w40p{width:40%;}
+.w50p{width:50%;}
+.w60p{width:60%;}
+.w70p{width:70%;}
+.w80p{width:80%;}
+.w90p{width:90%;}
+.w95p{width:95%;}
+.w100p{width:100%;}
+.w110p{width:110%;}
+.w120p{width:120%;}
+.w130p{width:130%;}
+.w140p{width:140%;}
+.w150p{width:150%;}
+
+.valn_t{vertical-align: top;}
+.red{ color:#F00;}
+.no_bdr{border:none;}
+.bdr01{border-bottom: 5px dotted #eee; margin-bottom:20px;}
+
+/* 6. utility padding setting
+================================================== */
+/* エラー時にバックグラウンドが変わる */
+.errDisplay{background-color:#ffcccc;}
+/* /* エラー表示の文字色 */
+.errtxt{color:#660000;}
+
+.photobg01{-moz-box-shadow: 0px 0px 10px #ccc;-webkit-box-shadow: 0px 0px 10px #ccc;
+box-shadow: 0px 0px 18px #eee;border-radius: 5px;border: 2px solid #fff;}
+
+.shadow01{-moz-box-shadow: 0px 0px 18px #eee;-webkit-box-shadow: 0px 0px 18px #eee;
+box-shadow: 0px 0px 18px #eee;border-radius: 5px;}
+
+.shadow02{-moz-box-shadow: 0px 0px 18px #eee;-webkit-box-shadow: 0px 0px 18px #eee;
+box-shadow: 0px 0px 18px #eee; border:3px solid #fff;border-radius: 5px;}
+
+	/* 1 Anything below starting width */
+	@media only screen and (max-width: 1200px)  {}
+
+	/* 2 Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+
+		/* Features 3 columns */
+		.features li {
+			margin: 0 2% 20px;
+			width: 29.33%;
+		}
+
+		/* Portfolio items 2 columns*/
+		.port-item {
+			width: 47.9%;
+		}
+
+		/* Portfolio menu 2 columns */
+		.filter-menu {
+			margin-bottom: 40px;
+		}
+
+		.filter-menu li {
+			display: block;
+			margin: 0 auto 10px;
+			width: 48%;
+		}
+
+		/* When 1 col is better than 2 */
+		.blog-main,
+		.aside,
+		.project>.container>.one-third,
+		.project>.container>.two-thirds {
+			margin: 0;
+			width: 100%;
+		}
+		
+		.blog-main {
+			margin-bottom: 70px;
+		}
+
+		/* Feature hex images 1 column */
+		.feature-imgs {
+			text-align: center;
+			display: block;
+			position: relative;
+		}
+		.feature-imgs li {
+			display: inline-block;
+			margin-bottom: 20px;
+			padding-bottom: 20px;
+			float: none;
+			width: 50%;
+		}
+		.feature-imgs .middle {
+			margin-top: 0;
+		}
+
+		/* Clients 3 columns */
+		.clients li {
+			margin: 0 1% 20px;
+			width: 30%;
+			overflow: hidden;
+		}
+
+		/* Slider smaller */
+		.welcome .caption-title {
+			font-size: 60px;
+		}
+
+		.welcome .caption-subtitle {
+			font-size: 26px;
+		}
+
+		/* SHORTEN SLIDER */
+		.slider-wrapper .bx-viewport,
+		.slider-wrapper .bx-wrapper,
+		.slider-wrapper,
+		.main-slider {
+			height: 500px !important;
+		}
+
+	}
+
+	/* 3 Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+	/* 4 All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+
+
+		/* Features 2 columns */
+		.features li {
+			margin: 0 1% 20px;
+			width: 48%;
+		}
+
+		/* Portfolio items full width*/
+		.port-item {
+			padding: 0;
+			width: 100%;
+		}
+
+		/* Clients 3 columns */
+		.clients li {
+			margin: 0 1% 20px;
+			width: 48%;
+		}
+
+		/* Slider smaller */
+		.welcome .caption-title {
+			font-size: 40px;
+		}
+
+		.welcome .caption-subtitle {
+			font-size: 20px;
+		}
+
+		.tweet_text {
+			width: 100%;
+		}
+
+		/* Hide Revolution arrows on small screen */
+		.tp-leftarrow,
+		.tp-rightarrow {
+			display: none;
+		}
+
+	}
+
+	/* 5 Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+	/* 6 Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+
+		.feature-imgs li {
+			width: 100%;
+		}
+
+		/* Portfolio menu 100% */
+		.filter-menu li {
+			width: 100%;
+		}
+
+	}
+
+	@media only screen and (max-width: 240px) {
+		/* Hides logo on exceptionally narrow devices */
+		.header .logo {
+			display: none;
+		}
+	}
+
+	/* 7 Narrow screens */
+	@media only screen and (max-width: 959px) {
+
+		.main_menu {
+			display: none;
+		}
+
+		.header .container {
+			width: 100%;
+		}
+
+		.selectnav {
+			display: block;
+			float: right;
+		}
+
+		.header {
+			background: #555;
+			padding: 20px;
+			height: 70px;
+		}
+
+		/* Extra space for bigger header */
+		.page {
+			padding-top: 120px; /* To match .header height */
+		}
+		.slider-wrapper {
+			margin-top: 70px; /* To match .header height */
+		}
+
+
+		.logo { width: 40px; margin-bottom: 10px;}
+		.logo  img { width: 100%; }
+
+	}
