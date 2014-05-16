@@ -717,7 +717,7 @@ h1.section-title:after,
     display :inline-block;
     font-size: 14px;
     line-height: 1;
-    padding: 23px 30px 21px 25px;
+    padding: 23px 10px 21px 10px;
 }
 
 .main_menu li:first-child:after {
