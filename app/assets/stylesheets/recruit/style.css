@@ -536,6 +536,8 @@ h1.section-title:after,
 
 .slider-wrapper {
     position: relative;
+    width: 100%;
+    overflow: hidden;
 }
 
 .down {
