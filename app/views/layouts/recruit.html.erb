@@ -10,400 +10,420 @@
   <%= stylesheet_link_tag    "recruit", :media => "all" %>
   <%= javascript_include_tag "recruit" %>
   <%= csrf_meta_tags %>
-  <meta content="width=1024" name="viewport">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width">
   <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/assets/css/font-awesome.min.css">
-  <link href="/assets/recruit/base.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/grid.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/layout.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/scripts.css" type="text/css" rel="stylesheet">
   <link href="/assets/recruit/style.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/switcher.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/default.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-burgundy.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-custom.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-darkpurple.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-green.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-lightblue.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-mint.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-navy.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-orange.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-pink.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-purple.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-red.css" type="text/css" rel="stylesheet">
-  <link href="/assets/recruit/colors/style-yellow.css" type="text/css" rel="stylesheet">
-
+   <link href="/assets/recruit/base.css" type="text/css" rel="stylesheet">
   <script src="/assets/recruit/vendor/modernizr-2.6.2.min.js"></script>
 </head>
+
+
+
 <body>
 
-<body id="top">
-  <!--[if lt ie 7]>
-            <p class="browsehappy">you are using an <strong>outdated</strong> browser. please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+<a href="top" id="top"></a>
+<!--[if lt ie 7]>
+  <p class="browsehappy">you are using an <strong>outdated</strong> browser. please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-    <div class="preloader"><i class="fa fa-spinner spin"></i></div>
+<!-- Header Section -->
+<div class="header" id="nav">
+  <div class="container">
 
-  <!-- STANDARD SLIDER -->
-  <div class="slider-wrapper" style="background-image: url('/assets/recruit/slider/bg-1.jpg');">
-    <ul class="main-slider bxslider">
-      <li>
-        <div class="caption">
-          <div class="vertical-align welcome">
-            <h1 class="caption-title cap-anim last" data-animation="fadeInDown"><img src="/assets/recruit/main_txt01.png"></h1>
-          </div><!-- End .vertical-align -->
-        </div><!-- End .caption -->
-      </li>
-            <li>
-        <div class="caption">
-          <div class="vertical-align welcome">
-            <h1 class="caption-title cap-anim" data-animation="fadeInDown"><img src="/assets/recruit/main_logo01.png"></h1>
-          </div><!-- End .vertical-align -->
-        </div><!-- End .caption -->
-      </li>
-    </ul><!-- End .main-slider -->
-    <a href="#vision" class="down"><i class="fa fa-angle-down"></i><span>scroll for more</span></a>
-  </div><!-- End .slider-wrapper -->
-
-
-    <div class="header" id="nav">
-    <div class="container">
-
-      <!-- LOGO -->
-      <a href="index.html" class="logo">
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+      <h1>
         <img src="/assets/recruit/logo.png" width="280" alt="侍エンジニア塾">
-      </a>
+      </h1>
+    </a>
+ 
+    <ul id="menu" class="main_menu">
+      <li><a href="#top">Home</a></li>
+      <li><a href="#vision">VISION</a></li>
+      <li><a href="#our">OUR BUSINESS</a></li>
+      <li><a href="#work">Work Environment </a></li>
+      <li><a href="#message">MESSAGE</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
-      <ul id="sn" class="main_menu">
+    <nav id="sn" class="main_menu">
+      <ul>
         <li><a href="#top">Home</a></li>
         <li><a href="#vision">VISION</a></li>
         <li><a href="#our">OUR BUSINESS</a></li>
         <li><a href="#work">Work Environment </a></li>
         <li><a href="#message">MESSAGE</a></li>
         <li><a href="#contact">Contact</a></li>
-      </ul><!-- End .main-menu -->
-    </div><!-- End .container -->
-    </div><!-- End .header -->
+      </ul>
+    </nav><!-- End .main-menu -->
+  </div><!-- End .container -->
+</div><!-- End .header -->
+<!-- /Header Section -->
 
+<!-- <div class="preloader"><i class="fa fa-spinner spin"></i></div> -->
 
-  <!-- ABOUT -->
-  <section id="vision" class="sect-1">
-    <div class="container">
-      <div class="section-title animated" data-animate="fadeInDown">
-        <h1 class="title">VISION</h1>
-        <p class="description"></p>
+<!--Slider Section-->
+<div class="slider-wrapper">
+<!--div class="slider-wrapper" style="background-image: url('/assets/recruit/slider/bg-1.jpg');"-->
+  <div class="movie_pc">
+    <video loop="" autoplay preload="auto">
+      <source type="video/ogg" height="600px" width="100%" poster="/assets/recruit/slider/bg-1.jpg" src="/assets/recruit/movie/samura-mtg03.webm"></source>
+      <source type="video/ogg" height="600px" width="100%" poster="/assets/recruit/slider/bg-1.jpg" src="/assets/recruit/movie/samura-mtg03.ogv"></source>
+      <source height="600px" width="100%" poster="/assets/recruit/slider/bg-1.jpg" src="/assets/recruit/movie/samura-mtg03.mp4"></source>
+      <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+    </video>
+  </div>
+  <div class="movie_sp">
+    <img src="/assets/recruit/slider/bg-1.jpg">
+    <p class="sp-down">
+      <a href="#info">
+        <img src="/assets/recruit/sp-main02.png" alt="" width="300" heigth="100">
+      </a>
+    </p>
+  </div>
+
+<!-- レスポンシブにするのでスライダーはいらない？ -->
+  <!--ul class="main-slider bxslider">
+    <li>
+      <div class="caption">
+        <div class="vertical-align welcome">
+          <h2 class="caption-title cap-anim last" data-animation="fadeInDown">
+            <img src="/assets/recruit/main_txt01.png">
+          </h2>
+        </div>
       </div>
-            
-            <p class="mb40 animated" data-animate="fadeInDown">プログラミングを学ぶだけではなく、その先にある自由や豊かさ、幸せを手に入れてもらうために、実践的な学習の場を私達は提供しています。
-
-実際にアイデアを形にするWebサービス開発や、その技術をもっての就職や独立の支援、そして起業まで、その人の自己実現を幅広くサポートします。
- 
-現在、ITエンジニアに代表されるプロフェッショナルの人材不足が顕著です。
-スキルと教養の両方の知恵を持ったエンジニアを増やしていけば、世界は今よりも、少しだけ前に進みます。
-
-現代に必要なスキルや教養を広めるため、圧倒的なクオリティで実践的な講座をオンラインプラットフォームで全国に配信していきます。
- 
- 年間１万人以上のフリーランスや起業家を輩出する環境を創りだすことを目標に、人生を変えるプログラミングスクールとして、 一人一人の自己実現に貢献していきたい。これが私達、<a href="http://www.sejuku.net/pages/lesson" target="_blank">侍エンジニア塾</a>の望みです。</p>
- 
- <p class="clear"></p>
- 
- <div class="section-title animated" data-animate="fadeInDown">
-        <h1 class="title">3つの理念</h1>
-        <p class="description"></p>
+    </li>
+    <li>
+      <div class="caption">
+        <div class="vertical-align welcome">
+          <h2 class="caption-title cap-anim" data-animation="fadeInDown">
+            <img src="/assets/recruit/main_logo01.png">
+          </h2>
+        </div>
+      </div>
+    </li>
+  </ul-->
+<!--　スライダー終わり -->
+  <div class="container">
+    <div class="main-catch">
+      <div class="main-h2">
+        <h2>人生が変わるプログラミングスクール</h2>
+        <p>〜未来を創る人財求む〜</p>
+      </div>
+      <div class="main-btn alnC">
+        <a href="#vision" class="btn-position">
+          <span>募集内容を見る</span>
+        </a>
+      </div>
+      <!-- <img src="/assets/recruit/main_txt01.png" alt="" width="960" height="74"> -->
+    </div>
+  </div>
 </div>
-
-      <ul class="features animated" data-animate="fadeInDown">
-        <li class="one-third">
-          <h3 class="title">1.Love & Peace</h3>
-                    <p>『人々が愛しあい自然と調和した社会』を実現するキレイゴトを実現するために、圧倒的な実行力を持った組織をつくること</p>
-        </li>
-        <li class="one-third">
-          <h3 class="title">2.Freedom</h3>
-                    <p>そのためにはより多くの人々が『自己実現』していく必要があるスキルと教養を学んだ人々が数多くの自由人やリーダーを輩出すること</p>
-        </li>
-        <li class="one-third last">
-          <h3 class="title">3.Education</h3>
-                    <p>そのために必要な『情報と機会』を提供する関わる人全てが幸せで豊かになっていく環境を創ること</p>
-        </li>
-      </ul>
-    </div><!-- End .container -->
-  </section>
+<!-- End .slider-wrapper -->
+<!--Slider Section-->
 
 
-  <!-- PORTFOLIO -->
-  <section id="our" class="portfolio-wrapper sect-2">
-    <div class="container">
 
-      <div class="section-title animated" data-animate="fadeInDown">
-        <h1 class="title">OUR BUSINESS</h1>
+
+
+<!-- Vision Section-->
+<section id="vision" class="sect-1">
+  <div class="container">
+    <div class="section-title animated" data-animate="fadeInDown">
+      <h2 class="title">VISION</h2>
+      <p class="description"> </p>
+    </div>
+          
+    <p class="mb40 animated" data-animate="fadeInDown">プログラミングを学ぶだけではなく、その先にある自由や豊かさ、幸せを手に入れてもらうために、実践的な学習の場を私達は提供しています。
+
+    実際にアイデアを形にするWebサービス開発や、その技術をもっての就職や独立の支援、そして起業まで、その人の自己実現を幅広くサポートします。<br>
+     
+    現在、ITエンジニアに代表されるプロフェッショナルの人材不足が顕著です。
+    スキルと教養の両方の知恵を持ったエンジニアを増やしていけば、世界は今よりも、少しだけ前に進みます。
+
+    現代に必要なスキルや教養を広めるため、圧倒的なクオリティで実践的な講座をオンラインプラットフォームで全国に配信していきます。<br>
+     
+    年間１万人以上のフリーランスや起業家を輩出する環境を創りだすことを目標に、人生を変えるプログラミングスクールとして、 一人一人の自己実現に貢献していきたい。これが私達、<a href="http://www.sejuku.net/pages/lesson" target="_blank">侍エンジニア塾</a>の望みです。</p>
+
+    <p class="clear"></p>
+     
+    <div class="section-title animated" data-animate="fadeInDown">
+        <h2 class="title mrg-t-10">3つの理念</h2>
         <p class="description"></p>
-      </div>
-            
-            
-            <ul class="feature animated" data-animate="fadeInDown">
-        <li class="one-half">
-          <img src="/assets/recruit/our-img01.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >
-        </li>
-        <li class="one-half last">
-          <p class="animated alnL" data-animate="fadeInRight">私たちは、人々が自己実現していくために必要な教育プラットフォームを創っています。
-全ての人が自己実現をするために、それぞれのゴールに最短でたどり着くために必要なノウハウやスキルやマインドを提供する。
-それが私たちの"志事”です。
-具体的には『侍エンジニア塾』というプログラミングのマンツーマンレッスンをリアルとネット通じておこなっています</p>
+    </div>
 
-<h5 class="title alnL">■マンツーマンレッスン</h5>
-<p class="animated alnL" data-animate="fadeInRight">ただプログラミングを教えるだけではなく、WEBサービス開発や、フリーランスエンジニアとしての独立など、実践的なプログラミング学習を提供しています。
-1人1人の目標と学習度合いをヒアリングし、それぞれに合ったスケジュールを提案。
-定期的に目標達成のためのコーチングを行い、24時間サポートでプログラミング学習をバックアップします。</p>
+    <ul class="features animated" data-animate="fadeInDown">
+      <li class="one-third">
+        <h3 class="title">1.Love & Peace</h3>
+        <p>『人々が愛しあい自然と調和した社会』を実現するキレイゴトを実現するために、圧倒的な実行力を持った組織をつくること</p>
+      </li>
 
- 
-<h5 class="title alnL">■セミナー</h5>
-<p class="animated alnL" data-animate="fadeInRight">毎月50人以上が集まるセミナーを開催。
-多くの人へ「最短3ヶ月で稼げるフリーランスエンジニアになる」ために必要な情報を提供しています。</p>
+      <li class="one-third">
+        <h3 class="title">2.Freedom</h3>
+        <p>そのためにはより多くの人々が『自己実現』していく必要があるスキルと教養を学んだ人々が数多くの自由人やリーダーを輩出すること</p>
+      </li>
 
-<h5 class="title alnL">■コミュニティイベント</h5>
-<p class="animated alnL" data-animate="fadeInRight">月に数回、グループレッスンやレクリエーションを開催し、
-共にプログラミング学習をする仲間同士の交流の場を作っています。</p>
+      <li class="one-third last">
+        <h3 class="title">3.Education</h3>
+        <p>そのために必要な『情報と機会』を提供する関わる人全てが幸せで豊かになっていく環境を創ること</p>
+      </li>
+    </ul>
+  </div><!-- End .container -->
+</section>
+<!-- /Vision Section-->
 
-        </li>
-      </ul>
-      
-      
+
+<!-- Our Business -->
+<section id="our" class="portfolio-wrapper sect-2">
+  <div class="container">
+    <div class="section-title animated" data-animate="fadeInDown">
+      <h2 class="title">OUR BUSINESS</h2>
+      <p class="description"></p>
+    </div>
           
+    <ul class="feature animated" data-animate="fadeInDown">
+      <li class="one-half f-l">
+        <img src="/assets/recruit/our-img01.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >
+      </li>
+      <li class="one-half last f-l">
+        <p class="animated alnL" data-animate="fadeInRight">私たちは、人々が自己実現していくために必要な教育プラットフォームを創っています。
+        全ての人が自己実現をするために、それぞれのゴールに最短でたどり着くために必要なノウハウやスキルやマインドを提供する。<br>
+        それが私たちの"志事”です。
+        具体的には『侍エンジニア塾』というプログラミングのマンツーマンレッスンをリアルとネット通じておこなっています</p>
+
+        <h5 class="title alnL">■マンツーマンレッスン</h5>
+        <p class="animated alnL" data-animate="fadeInRight">ただプログラミングを教えるだけではなく、WEBサービス開発や、フリーランスエンジニアとしての独立など、実践的なプログラミング学習を提供しています。
+        1人1人の目標と学習度合いをヒアリングし、それぞれに合ったスケジュールを提案。
+        定期的に目標達成のためのコーチングを行い、24時間サポートでプログラミング学習をバックアップします。</p>
+
+        <h5 class="title alnL">■セミナー</h5>
+        <p class="animated alnL" data-animate="fadeInRight">毎月50人以上が集まるセミナーを開催。
+        多くの人へ「最短3ヶ月で稼げるフリーランスエンジニアになる」ために必要な情報を提供しています。</p>
+
+        <h5 class="title alnL">■コミュニティイベント</h5>
+        <p class="animated alnL" data-animate="fadeInRight">月に数回、グループレッスンやレクリエーションを開催し、
+        共にプログラミング学習をする仲間同士の交流の場を作っています。</p>
+      </li>
+    </ul>
+  </div><!-- End .container -->
+</section>
+<!-- /Our Business -->
+
+
+<!-- Work Section -->
+<section id="work" class="sect-1">
+  <div class="container">
+    <div class="section-title">
+      <h2 class="title">Work Environment </h2>
+      <p class="description"></p>
+    </div>
+
+    <ul class="features">
+      <li class="one-half f-l">
+        <h4 class="title alnL">1.働き方がフレキシブル</h4>
+        <p class="animated alnL" data-animate="fadeInDown">・他の仕事をしながら、みんながフリーランスで活躍<br>
+        ・フルでコミット or 仕事をしながら土日のコミットも可能。<br>
+        ・基本的にはWEB上でコミュニケーション。リアル会議は月1-2回程度</p>
+
+        <h4 class="title alnL">2.メンバーの自己実現を応援</h4>
+        <p class="animated alnL" data-animate="fadeInDown">・創業段階なので、ベンチャー立ち上げの中で、起業に必要なスキルが身につく。<br>
+        ・身に付けたいスキルをその道のプロフェッショナル、メンターに学べる（マーケティング、プログラミング、デザイン、営業、マネージメント、企画）<br>
+        ・メンバーの創業を支援（コンサル、技術提供、ジョイント、業務委託）</p>
+
+        <h4 class="title alnL">3.とにかく楽しい</h4>
+        <p class="animated alnL" data-animate="fadeInDown">・『関わる人全てが自己実現をするビジネス』を目指しているからこその成長実感。<br>
+        ・BBQ、登山、シェアハウスなど、非日常が日常に。<br>
+        ・『良いひと』『面白いひと』『出来るひと』しかいない環境。</p>          
+      </li>
+      <li class="one-half last f-l">
+        <img src="/assets/recruit/work-img01.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >          
+      </li>
+    </ul>
+  </div><!-- End .container -->
+</section>
+<!-- /Work Section -->
+
+
+<!-- Message Section -->
+<section id="message" class="sect-2">
+  <div class="container">
+
+    <div class="section-title">
+      <h2 class="title">MESSAGE</h2>
+      <p class="description"></p>
+    </div>
+
+    <ul class="features">
+      <p class="animated alnL mb50" data-animate="fadeInDown"></p> 
+      <li class="one-half f-l">
+        <p class="animated alnL" data-animate="fadeInDown">
+        <div class="profile-img">
+          <img src="/assets/recruit/message-img02.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >
+        </div>
+        <div class="profile-img-inline">
+          <h3 class="animated  title"  data-animate="fadeInDown">代表:木内 翔大 SHOTA KIUCHI</h3>
+          <p class="animated  title"  data-animate="fadeInDown">小学生の頃からゲームを作ってしまう”geek”。<br>
+          大学在学中、フリーランスエンジニアとして7つのスタートアップ立ち上げに参画。在宅で時給換算1万円以上という収入を得る経験をし自由と豊かさを手に入れる。<br>
+          <br>
+          2012年、プログラミングを教えていた友人の大学生がわずか半年でフリーランスエンジニアになる。<br>
+          短期間で自己実現する姿を見て、「人の人生を変えることができるかもしれない」と思い、2013年、侍エンジニア塾を設立。<br>
+          <br>
+          現在は複数のスクールの経営を行い、多くの人が自己実現を可能とする教育プラットフォームを作り上げている。</p>
+        </div>
+      </li>
+
+      <li class="one-half last f-l">
+        <p class="animated alnL" data-animate="fadeInDown">
+        私達はプログラミングなどのスキル教育を通し、日本の未来を創るリーダー達を育てます。<br><br>
+
+        60年前の日本は焼け野原でした。その前の日本はずっと戦争や内乱を繰り返しています。今のように平和で豊かな時代は、人類の歴史で見たら『ほんの一瞬』です。<br>
+        しかし、それは先人達が築いた努力の上にあるものです。国際競争力を失いつつある今の日本は『沈みゆく船』といえます。<br>
+        やがて平和で豊かな時代の波は終わります。<br>
+        その時に私たちは自分たちの力で生きて行くしかありません。<br><br>
+
+        私達は、現代必須のスキルを『三種の神器』と定義しています。<br>
+        ここでいう三種の神器とは、コミュニケーションスキル、ITスキル、ファイナンススキルです。<br>
+        今後のグローバル化を含めた時代の変化は加速し、三種の神器がマストになる時代がきます。<br><br>
+
+        プログラミング学習にとどまらず、現代に必要な教育を総合的に提供する新しい教育システムが日本に芽吹いていくことで、精神•技術•教養に優れた日本人が増え、彼らが新しい日本を創っていくことを信じます。<br><br>
+
+        そして私達においても今後のオンライン化や組織拡大にともない、非常に魅力的で優秀な人材が集まりはじめています。組織文化の中に『教育』が組み込まれているので、『関わる人全てが幸せに自己実現していく』という理想の労働環境に近づきつつあります。<br>
+        教育の環境を創って行く事、そして『教育』を通して私たちなりの『愛』を形にして広げ続ける事。<br><br>
+
+        『人は幸せになるために生まれてきた』という信念のもと、人々の自由で豊かな幸せを広げ、平和に貢献する事こそが、私達侍エンジニア塾の最大の願いです。
+        </p>
+      </li>
+    </ul>
           
-      
-    </div><!-- End .container -->
-
-    
-
-  </section>
+  </div><!-- End .container -->
+</section>
+<!-- /Message Section -->
 
 
-  <!-- CALLOUT -->
-  <section id="work" class="sect-1">
-    <div class="container">
+<!-- Recruiting Section -->
+<section id="info" class="testimonials">
+  <div class="tint">
+    <div class="container">    
       <div class="section-title">
-        <h1 class="title">Work Environment </h1>
+        <h2 class="title">RECRUITING INFORMATION</h2>
         <p class="description"></p>
-      </div>
-            
-            
-            <ul class="features">
-        <li class="one-half">
-                
-<h4 class="title alnL">1.働き方がフレキシブル</h4>
-<p class="animated alnL" data-animate="fadeInDown">・他の仕事をしながら、みんながフリーランスで活躍<br>
-・フルでコミット or 仕事をしながら土日のコミットも可能。<br>
-・基本的にはWEB上でコミュニケーション。リアル会議は月1-2回程度</p>
+      </div> 
+        <h2 class="title">募集職種</h2>
 
- 
-<h4 class="title alnL">2.メンバーの自己実現を応援</h4>
-<p class="animated alnL" data-animate="fadeInDown">・創業段階なので、ベンチャー立ち上げの中で、起業に必要なスキルが身につく。<br>
-・身に付けたいスキルをその道のプロフェッショナル、メンターに学べる（マーケティング、プログラミング、デザイン、営業、マネージメント、企画）<br>
-・メンバーの創業を支援（コンサル、技術提供、ジョイント、業務委託）</p>
-
-<h4 class="title alnL">3.とにかく楽しい</h4>
-<p class="animated alnL" data-animate="fadeInDown">・『関わる人全てが自己実現をするビジネス』を目指しているからこその成長実感。<br>
-・BBQ、登山、シェアハウスなど、非日常が日常に。<br>
-・『良いひと』『面白いひと』『出来るひと』しかいない環境。</p>
-
-          
-        </li>
-        <li class="one-half last">
-                
-                <img src="/assets/recruit/work-img01.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >          
-
-        </li>
-      </ul>
-
+      <table class="cbox fs120p alnL table-standard">
+        <tr>
+            <th>1.プログラマー(インストラクター)　　</th>
+            <td>スキル・経験：　Ruby, Ruby on Rails</td>
+        </tr>
+        <tr>
+            <th>2.マーケター</th>
+            <td>スキル・経験：　SEO、リスティング、ライティングのいずれか</td>
+        </tr>
+        <tr>
+            <th>3.デザイナー</th>
+            <td>スキル・経験：　LP作成実績有　Illustrator, Photoshop, HTML, CSS</td>
+        </tr>
+        <tr>
+            <th>4.インターン</th>
+            <td>スキル・経験：　プログラミング、マーケティング、デザインいずれかの技能を磨きたい方</td>
+        </tr>
+        <tr>
+            <th>雇用形態：</th>
+            <td>業務委託</td>
+        </tr>
+        <tr>
+            <th>勤務地：</th>
+            <td>渋谷近辺</td>
+        </tr>
+        <tr>
+            <th>勤務時間：</th>
+            <td>要相談</td>
+        </tr>
+        <tr>
+            <th>報酬：</th>
+            <td>要相談</td>
+        </tr>
+      </table>        
     </div><!-- End .container -->
-  </section>
+  </div><!-- End .tint -->
+</section>
+<!-- /Recruiting Section -->    
 
 
-  <section id="message" class="sect-2">
-    <div class="container">
-
-      <div class="section-title">
-        <h1 class="title">MESSAGE</h1>
-        <p class="description"></p>
-      </div>
-            
-            
-            <ul class="features">
-            
-            <p class="animated alnL mb50" data-animate="fadeInDown"></p> 
-
-        <li class="one-half">
-                
-<p class="animated alnL" data-animate="fadeInDown">
-<div class="profile-img">
-<img src="/assets/recruit/message-img02.jpg" alt="" class="animated shadow02" data-animate="fadeInDown" >
-<div class="profile-img-inline">
-<h3 class="animated  title"  data-animate="fadeInDown">代表:木内 翔大 SHOTA KIUCHI</h3>
-<p class="animated  title"  data-animate="fadeInDown">小学生の頃からゲームを作ってしまう”geek”。<br>
-大学在学中、フリーランスエンジニアとして7つのスタートアップ立ち上げに参画。在宅で時給換算1万円以上という収入を得る経験をし自由と豊かさを手に入れる。<br>
-<br>
-2012年、プログラミングを教えていた友人の大学生がわずか半年でフリーランスエンジニアになる。<br>
-短期間で自己実現する姿を見て、「人の人生を変えることができるかもしれない」と思い、2013年、侍エンジニア塾を設立。<br>
-<br>
-現在は複数のスクールの経営を行い、多くの人が自己実現を可能とする教育プラットフォームを作り上げている。</p>
-</div>
-<br>
-
-
-        </li>
-        <li class="one-half last">
-                
-                
-                
-                
-                
-<p class="animated alnL" data-animate="fadeInDown">
-私達はプログラミングなどのスキル教育を通し、日本の未来を創るリーダー達を育てます。<br><br>
-
-60年前の日本は焼け野原でした。その前の日本はずっと戦争や内乱を繰り返しています。今のように平和で豊かな時代は、人類の歴史で見たら『ほんの一瞬』です。<br>
-しかし、それは先人達が築いた努力の上にあるものです。国際競争力を失いつつある今の日本は『沈みゆく船』といえます。<br>
-やがて平和で豊かな時代の波は終わります。<br>
-その時に私たちは自分たちの力で生きて行くしかありません。<br><br>
-
-私達は、現代必須のスキルを『三種の神器』と定義しています。<br>
-ここでいう三種の神器とは、コミュニケーションスキル、ITスキル、ファイナンススキルです。<br>
-今後のグローバル化を含めた時代の変化は加速し、三種の神器がマストになる時代がきます。<br><br>
-
-プログラミング学習にとどまらず、現代に必要な教育を総合的に提供する新しい教育システムが日本に芽吹いていくことで、精神•技術•教養に優れた日本人が増え、彼らが新しい日本を創っていくことを信じます。<br><br>
-
-そして私達においても今後のオンライン化や組織拡大にともない、非常に魅力的で優秀な人材が集まりはじめています。組織文化の中に『教育』が組み込まれているので、『関わる人全てが幸せに自己実現していく』という理想の労働環境に近づきつつあります。<br>
-教育の環境を創って行く事、そして『教育』を通して私たちなりの『愛』を形にして広げ続ける事。<br><br>
-
-『人は幸せになるために生まれてきた』という信念のもと、人々の自由で豊かな幸せを広げ、平和に貢献する事こそが、私達侍エンジニア塾の最大の願いです。
-</p>
-
-
-    
-
-        </li>
-      </ul>
-            
-    </div><!-- End .container -->
-  </section>
-
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="tint">
-      <div class="container">
-            
-            <div class="section-title">
-        <h1 class="title">RECRUITING INFORMATION</h1>
-        <p class="description"></p>
-      </div>
-            
-            <h1 class="title">募集職種</h1>
-
-<table class="cbox fs120p alnL table-standard">
-    <tr>
-        <th>1.プログラマー(インストラクター)　　</th>
-        <td>スキル・経験：　Ruby, Ruby on Rails</td>
-    </tr>
-    <tr>
-        <th>2.マーケター</th>
-        <td>スキル・経験：　SEO、リスティング、ライティングのいずれか</td>
-    </tr>
-    <tr>
-        <th>3.デザイナー</th>
-        <td>スキル・経験：　LP作成実績有　Illustrator, Photoshop, HTML, CSS いずれか</td>
-    </tr>
-    <tr>
-        <th>4.インターン</th>
-        <td>スキル・経験：　プログラミング、マーケティング、デザインいずれかの技能を磨きたい方</td>
-    </tr>
-    <tr>
-        <th>雇用形態：</th>
-        <td>業務委託</td>
-    </tr>
-    <tr>
-        <th>勤務地：</th>
-        <td>渋谷近辺</td>
-    </tr>
-    <tr>
-        <th>勤務時間：</th>
-        <td>要相談</td>
-    </tr>
-    <tr>
-        <th>報酬：</th>
-        <td>要相談</td>
-    </tr>
-</table>
-        
-
-      </div><!-- End .container -->
-    </div><!-- End .tint -->
-  </section>
-
-
-  <!-- CONTACT -->
-  <section id="contact" class="sect-1">
-    <div class="container">
-
-      <div class="section-title animated"  data-animate="fadeIn">
-        <h1 class="title">Contact Us</h1>
-        <p class="description"></p>
-      </div>
-            
-           <p class="alnC" >下記のボタンをクリックして、リンク先にある応募フォームからご応募下さい。</p>
-            
-      <form method="post" action="php/send_message.php" class="contact-form">
-        <div class="one-half animated" data-animate="fadeInDown">
-          <span>
-            <input type="text" name="name" id="name" placeholder="name">
-          </span>
-          <span>
-            <input type="email" name="email" id="email" placeholder="email">
-          </span>
-          <span>
-            <input type="text" name="subject" id="subject" placeholder="subject">
-          </span>
-        </div><!-- End .one-third -->
-
-        <div class="one-half last animated" data-animate="fadeInDown" data-animate-delay="1000">
-          <span>
-            <textarea name="message" id="message" placeholder="message"></textarea>
-          </span>
-        </div><!-- End .one-half -->
-        <button id="submit" type="submit" class="contact-button animated" data-animate="fadeInDown" data-animate-delay="1000">Send Message</button>
-      </form>
-
-    </div><!-- End .container -->
-
-  </section>
+<!-- Contact Section -->
+<section id="contact" class="sect-1">
+  <div class="container">
+    <div class="section-title animated"  data-animate="fadeIn">
+      <h2 class="title">Contact Us</h2>
+      <p class="description"></p>
+    </div>
+      <p class="alnC" >下記のボタンをクリックして、リンク先にある応募フォームからご応募下さい。</p>
+    <form method="post" action="php/send_message.php" class="contact-form">
+      <div class="one-half animated" data-animate="fadeInDown">
+        <span>
+          <input type="text" name="name" id="name" placeholder="name">
+        </span>
+        <span>
+          <input type="email" name="email" id="email" placeholder="email">
+        </span>
+        <span>
+          <input type="text" name="subject" id="subject" placeholder="subject">
+        </span>
+      </div><!-- End .one-third -->
+      <div class="one-half last animated" data-animate="fadeInDown">
+        <span>
+          <textarea name="message" id="message" placeholder="message"></textarea>
+        </span>
+      </div><!-- End .one-half -->
+      <button id="submit" type="submit" class="contact-button animated" data-animate="fadeInDown">Send Message</button>
+    </form>
+  </div><!-- End .container -->
+</section>
+<!-- /Contact Section -->
 
 <%= yield %>
 
-
-
+<!-- Footer Section -->
 <section class="footer">
-    <img class="footer-logo" src="/assets/recruit/logo.png" width="350" alt="">
-    <div class="address">
-      人生が変わるプログラミングスクール
-    </div><!-- End .address -->
+  <a href="http://www.sejuku.net/" target="">
+    <img class="footer-logo" src="/assets/recruit/logo.png" width="350" alt="ロゴ">
+  </a>
+   <div class="address">
+    人生が変わるプログラミングスクール
+  </div><!-- End .address -->
 
-    <ul class="social-icons">
-      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-    </ul>
+  <ul class="social-icons">
+    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+  </ul>
 
     <div class="copy">© 2014 Samurai Programming Cram school</div>
-  </section>
+</section>
+<!-- /Footer Section -->
 
-  <!-- JQUERY -->
-    <script src="/assets/recruit/vendor/jquery.min.js"></script>
+<script src="/assets/recruit/vendor/jquery.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="/assets/recruit/scripts.js"></script>
+<script src="/assets/recruit/plugins.js"></script>
+<script src="/assets/recruit/main.js"></script>
 
-  <!-- PLUGINS -->
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="/assets/recruit/scripts.js"></script>
-    <script src="/assets/recruit/plugins.js"></script>
-
-  <!-- THEME SCRIPT -->
-    <script src="/assets/recruit/main.js"></script>
+<!-- meanmenu -->
+<script src="/assets/recruit/jquery.meanmenu.js"></script>
+<script>
+$(document).ready(function() {
+$('nav').meanmenu({
+    meanMenuClose: "x", // クローズボタン
+    meanMenuCloseSize: "18px", // クローズボタンのフォントサイズ
+    meanMenuOpen: "<span /><span /><span />", // 通常ボタン
+    meanRevealPosition: "right", // 表示位置
+    meanRevealColour: "", // 背景色
+    meanScreenWidth: "959", // 表示させるウィンドウサイズ(ブレイクポイント)
+});
+});
+</script>
 
 </body>
 </html>
