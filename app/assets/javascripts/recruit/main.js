@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
 	});
 
 	// SMOOTH MENU JUMP
-	$(".main_menu li, .down").click(function() {
+	$(".main_menu li, .down-down").click(function() {
 		
 		// Get the url from the clicked item or an anchor within
 		var url = $(this).attr("href");
