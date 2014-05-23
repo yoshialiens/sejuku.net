@@ -2528,7 +2528,7 @@ Movie
 .movie_sp .sp-down {
     position: absolute;
     overflow: hidden;
-    bottom: 15%;
+    bottom: 8%;
     margin: 0 5%;
     width: 90%;
 }
@@ -2545,7 +2545,7 @@ Movie
 @media only screen and (max-width: 767px) {
 
 p {line-height: 2; font-size: 0.75em;}
-section h1, section h2 {font-size: 1.75em; line-height: 1;}
+section h1, section h2 {font-size: 1.5em; line-height: 1;}
 h3 {font-size: 1.25em; line-height: 1;}
 
 /*.slider-wrapper .container {font-size: 60%; top:-30%; height: 330px;}*/
