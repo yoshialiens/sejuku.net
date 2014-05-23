@@ -996,7 +996,7 @@ h1.section-title:after,
 }
 
 .video-placeholder {
-    background-image: url('slider/video-placeholder.jpg');
+    background-image: url('/slider/video-placeholder.jpg');
     background-size: cover;
     background-position: center center;
 }
