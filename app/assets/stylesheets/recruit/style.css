@@ -214,6 +214,39 @@ body {font-family:'Lucida Grande','Hiragino Kaku Gothic ProN', Meiryo, sans-seri
     color:#FFFFFF !important;
 }
 
+.recruit-btn {
+    width: 100%;
+    margin: 0px auto;
+    position: relative;
+    top: 40%;
+}
+.recruit-btn a {
+    font-size:0.88em;
+    font-weight:bold;
+    -moz-border-radius:7px;
+    -webkit-border-radius:7px;
+    border-radius:7px;
+    border:0px solid #337fed;
+    padding:6px 18px 2px;
+    text-decoration:none;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(105%, #7FBBC5), color-stop(0%, #F1BF74) );
+    background:-moz-linear-gradient( center top, #7FBBC5 105%, #F1BF74 0% );
+    background:-ms-linear-gradient( top, #7FBBC5 105%, #F1BF74 0% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#7FBBC5', endColorstr='#F1BF74');
+    background-color:#7FBBC5;
+    color:#FFFFFF !important;
+    display:inline-block;
+}
+.recruit-btn a:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(105%, #F1BF74), color-stop(0%, #3d94f6) );
+    background:-moz-linear-gradient( center top, #F1BF74 105%, #7FBBC5 0% );
+    background:-ms-linear-gradient( top, #F1BF74 105%, #7FBBC5 0% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#F1BF74', endColorstr='#7FBBC5');
+    background-color:#F1BF74;
+    color:#FFFFFF !important;
+}
+
+
 /* -----------------------
 HEADING
  ----------------------- */
