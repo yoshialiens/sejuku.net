@@ -4,6 +4,7 @@ if RUBY_VERSION =~ /1.9/
 end
 
 source 'https://rubygems.org'
+ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 
