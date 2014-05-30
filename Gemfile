@@ -12,6 +12,7 @@ gem 'rails', '3.2.13'
 
 gem 'sqlite3', :group => [:development, :test]
 group :production do
+  gem 'rails_12factor'
   gem 'pg'
 end
 
