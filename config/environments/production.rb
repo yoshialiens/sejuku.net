@@ -86,6 +86,4 @@ Sejuku::Application.configure do
 	:user_name => "system@huv.sakura.ne.jp",
 	:password => 'Akibakim0i'}
 
-  }
-
 end
