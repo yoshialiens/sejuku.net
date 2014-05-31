@@ -131,22 +131,11 @@ header.lesson img {
 
 /* forms */
 
-input, textarea, select, .uneditable-input {
-  border: 1px solid #bbb;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  @include box_sizing;
-}
-
-input {
-  height: auto !important;
-}
-
 .required {
 	color: red;
 }
 
+/*
 #error_explanation {
   color: #f00;
   ul {
@@ -159,5 +148,6 @@ input {
   @extend .control-group;
   @extend .error;
 }
+*/
 
 
