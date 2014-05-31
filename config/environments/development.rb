@@ -48,8 +48,8 @@ Sejuku::Application.configure do
     :port => '587',
     :domain => 'smtp.gmail.com',
     :authentication => 'plain',
-    :user_name => 'shota7180@gmail.com',
-    :password => 'akibakimoi'
+    :user_name => '908.shinya@gmail.com',
+    :password => '06120908'
   }
 
 end

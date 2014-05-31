@@ -66,10 +66,26 @@ Sejuku::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # Exception Notification
-	Rails.application.config.middleware.use(
-		ExceptionNotifier,
-		:email_prefix => "Sejuku Exception Notification",
-		:sender_address => %{"侍エンジニア塾.net" <system@huv.sakura.ne.jp>},
-		:exception_recipients => %w{shota7180@gmail.com}
-	)
+# 	Rails.application.config.middleware.use(
+# 		ExceptionNotifier,
+# 		:email_prefix => "Sejuku Exception Notification",
+# 		:sender_address => %{"侍エンジニア塾.net" <system@huv.sakura.ne.jp>},
+# 		:exception_recipients => %w{shota7180@gmail.com}
+# 	)
+
+    # action mailer dafault url
+  config.action_mailer.default_url_options = { :host => 'http://www.sejuku.net/' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+  	:address => "huv.sakura.ne.jp",
+	:port => 587,
+	:authentication => :plain,
+	:user_name => "system@huv.sakura.ne.jp",
+	:password => 'Akibakim0i'}
+
+  }
+
 end
