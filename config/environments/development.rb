@@ -1,3 +1,5 @@
+# coding: utf-8
+
 Sejuku::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -37,4 +39,18 @@ Sejuku::Application.configure do
 
   # action mailer dafault url
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
+    :enable_starttls_auto => true,
+    :address => 'smtp.gmail.com',
+    :port => '587',
+    :domain => 'smtp.gmail.com',
+    :authentication => 'plain',
+    # まだ謎
+    :user_name => 'test@gmail.com',
+    :password => 'test'
+  }
+
 end

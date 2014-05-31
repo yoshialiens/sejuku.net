@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="span6 offset2">
+  <h2>侍エンジニア塾 入塾相談申込フォーム</h2>
+
+<p>侍エンジニア塾では、入塾に興味をお持ちの方向けに、塾に関する説明や相談をする時間を設けています。
+60分ほどで、塾の詳しい内容の説明と、優秀なコンサルタントに相談ができます。
+プログラミング全般に関すること
+Webサービス開発に関すること
+キャリアや独立起業に関すること
+幅広く、侍エンジニアのインストラクター兼コンサルタントがご相談に乗ります。
+正式受講をしなくても、この入塾相談を受ければ、
+『今後どのように学習していけばいいのか？』がわかります。
+また、この一時間で、人生が変わったという方も少なくありません。
+お気軽にお申込み下さい。
+<span class="required" >*必須</span></p>
+
+<%= form_for @contact, :url => contact_path do |form| %>
+      <%= render 'shared/error_messages' %>
+
+<table border="0" cellpadding="0" cellspacing="0" class="post">
+
+<tr>
+  <th>お名前<span class="required" >*</span></th>
+  <td><%= form.text_field :name %></td>
+</tr>
+
+<tr>
+  <th>電話番号<span class="required" >*</span></th>
+  <td><%= form.text_field :tel %></td>
+</tr>
+
+<tr>
+  <th>Facebook ID<span class="required" >*</span></th>
+  <td><%= form.text_field :fbid %></td>
+</tr>
+
+<tr>
+  <th>E-mail<span class="required" >*</span></th>
+  <td><%= form.text_field :email %></td>
+</tr>
+
+<tr>
+  <th>現在の状況と、興味を持った理由<span class="required" >*</span></th>
+  <td><%= form.text_area :reason %></td>
+</tr>
+
+<tr>
+  <th>面談希望日時<span class="required" >*</span></th>
+  <td><%= form.text_area :date_and_time %></td>
+</tr>
+
+</table>
+
+<div class="actions">
+    <%= form.submit "メール送信" %>
+</div>
+
+<% end %>
+
+  </div>
+</div>
