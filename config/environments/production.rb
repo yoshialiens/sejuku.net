@@ -73,8 +73,8 @@ Sejuku::Application.configure do
 # 		:exception_recipients => %w{shota7180@gmail.com}
 # 	)
 
-    # action mailer dafault url
-  config.action_mailer.default_url_options = { :host => 'http://www.sejuku.net/' }
+  # action mailer dafault url
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
@@ -84,6 +84,7 @@ Sejuku::Application.configure do
 	:port => 587,
 	:authentication => :plain,
 	:user_name => "system@huv.sakura.ne.jp",
-	:password => 'Akibakim0i'}
+	:password => 'Akibakim0i'
+  }
 
 end
