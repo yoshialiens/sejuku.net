@@ -65,14 +65,6 @@ Sejuku::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  # Exception Notification
-# 	Rails.application.config.middleware.use(
-# 		ExceptionNotifier,
-# 		:email_prefix => "Sejuku Exception Notification",
-# 		:sender_address => %{"侍エンジニア塾.net" <system@huv.sakura.ne.jp>},
-# 		:exception_recipients => %w{shota7180@gmail.com}
-# 	)
-
   # action mailer dafault url
   config.action_mailer.default_url_options = { :host => 'http://sejuku.herokuapp.com' }
 
