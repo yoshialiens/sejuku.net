@@ -74,7 +74,7 @@ Sejuku::Application.configure do
 # 	)
 
   # action mailer dafault url
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  config.action_mailer.default_url_options = { :host => 'http://sejuku.herokuapp.com' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
