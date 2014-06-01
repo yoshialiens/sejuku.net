@@ -66,18 +66,33 @@ Sejuku::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # action mailer dafault url
-  config.action_mailer.default_url_options = { :host => 'http://sejuku.herokuapp.com' }
+#   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+# 
+#   config.action_mailer.delivery_method = :smtp
+#   config.action_mailer.raise_delivery_errors = true
+#   config.action_mailer.smtp_settings = {
+#     :enable_starttls_auto => true,
+#     :address => 'huv.sakura.ne.jp',
+#     :port => '587',
+#     :domain => 'huv.sakura.ne.jp',
+#     :authentication => 'plain',
+#     :user_name => 'system@huv.sakura.ne.jp',
+#     :password => 'Akibakim0i'
+#   }
+
+
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
-    :address => 'huv.sakura.ne.jp',
+    :address => 'smtp.gmail.com',
     :port => '587',
-    :domain => 'huv.sakura.ne.jp',
+    :domain => 'smtp.gmail.com',
     :authentication => 'plain',
-    :user_name => 'system@huv.sakura.ne.jp',
-    :password => 'Akibakim0i'
+    :user_name => '908.shinya@gmail.com',
+    :password => '06120908'
   }
 
 end
