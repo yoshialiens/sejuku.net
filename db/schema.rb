@@ -23,6 +23,8 @@ ActiveRecord::Schema.define(:version => 20140530062425) do
 
   create_table "contacts", :force => true do |t|
     t.string   "name",          :null => false
+    t.string   "sex",           :null => false
+    t.string   "age",           :null => false
     t.string   "tel",           :null => false
     t.string   "fbid",          :null => false
     t.string   "email",         :null => false
