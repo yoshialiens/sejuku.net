@@ -95,14 +95,15 @@ Sejuku::Application.configure do
 #    :password => '06120908'
 #  }
 
-ActionMailer::Base.smtp_settings = {
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.smtp_settings = {
     :port =>           '587',
     :address =>        'smtp.mandrillapp.com',
-    :user_name =>      ENV['sejuku'],
-    :password =>       ENV['hrecITX_1JWp-VgwwwGzHA'],
+    :user_name =>      'app18337689@heroku.com',
+    :password =>       'iaMomqMOxDforLJayfBfMQ',
     :domain =>         'heroku.com',
     :authentication => :plain
-}
-ActionMailer::Base.delivery_method = :smtp
+  }
 
 end

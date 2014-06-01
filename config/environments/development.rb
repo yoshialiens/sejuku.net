@@ -58,14 +58,18 @@ Sejuku::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => 'huv.sakura.ne.jp',
-    :port => '587',
-    :domain => 'huv.sakura.ne.jp',
-    :authentication => 'plain',
-    :user_name => 'system@huv.sakura.ne.jp',
-    :password => 'Akibakim0i'
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      'app18337689@heroku.com',
+    :password =>       'iaMomqMOxDforLJayfBfMQ',
+    :domain =>         'heroku.com',
+    :authentication => :plain
   }
+
+ActionMailer::Base.smtp_settings = {
+
+}
+ActionMailer::Base.delivery_method = :smtp
 
 
 end
