@@ -81,18 +81,28 @@ Sejuku::Application.configure do
 #   }
 
 
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+#  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.smtp_settings = {
-    :enable_starttls_auto => true,
-    :address => 'smtp.gmail.com',
-    :port => '587',
-    :domain => 'smtp.gmail.com',
-    :authentication => 'plain',
-    :user_name => '908.shinya@gmail.com',
-    :password => '06120908'
-  }
+#  config.action_mailer.delivery_method = :smtp
+#  config.action_mailer.raise_delivery_errors = true
+#  config.action_mailer.smtp_settings = {
+#    :enable_starttls_auto => true,
+#    :address => 'smtp.gmail.com',
+#    :port => '587',
+#    :domain => 'smtp.gmail.com',
+#    :authentication => 'plain',
+#    :user_name => '908.shinya@gmail.com',
+#    :password => '06120908'
+#  }
+
+ActionMailer::Base.smtp_settings = {
+    :port =>           '587',
+    :address =>        'smtp.mandrillapp.com',
+    :user_name =>      ENV['sejuku'],
+    :password =>       ENV['hrecITX_1JWp-VgwwwGzHA'],
+    :domain =>         'heroku.com',
+    :authentication => :plain
+}
+ActionMailer::Base.delivery_method = :smtp
 
 end
