@@ -38,18 +38,34 @@ Sejuku::Application.configure do
   config.assets.debug = true
 
   # action mailer dafault url
+#   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+# 
+#   config.action_mailer.delivery_method = :smtp
+#   config.action_mailer.raise_delivery_errors = true
+#   config.action_mailer.smtp_settings = {
+#     :enable_starttls_auto => true,
+#     :address => 'smtp.gmail.com',
+#     :port => '587',
+#     :domain => 'smtp.gmail.com',
+#     :authentication => 'plain',
+#     :user_name => '908.shinya@gmail.com',
+#     :password => '06120908'
+#   }
+  
+  # action mailer dafault url
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.smtp_settings = {
     :enable_starttls_auto => true,
-    :address => 'smtp.gmail.com',
+    :address => 'huv.sakura.ne.jp',
     :port => '587',
-    :domain => 'smtp.gmail.com',
+    :domain => 'huv.sakura.ne.jp',
     :authentication => 'plain',
-    :user_name => '908.shinya@gmail.com',
-    :password => '06120908'
+    :user_name => 'system@huv.sakura.ne.jp',
+    :password => 'Akibakim0i'
   }
+
 
 end
