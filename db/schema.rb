@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140603192625) do
+ActiveRecord::Schema.define(:version => 20140604155119) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -22,16 +22,16 @@ ActiveRecord::Schema.define(:version => 20140603192625) do
   end
 
   create_table "contacts", :force => true do |t|
-    t.string   "name",                         :null => false
-    t.integer  "sex",           :limit => 255, :null => false
-    t.string   "age",                          :null => false
-    t.string   "tel",                          :null => false
-    t.string   "fbid",                         :null => false
-    t.string   "email",                        :null => false
-    t.text     "reason",                       :null => false
-    t.text     "date_and_time",                :null => false
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.string   "name",          :null => false
+    t.string   "sex",           :null => false
+    t.string   "age",           :null => false
+    t.string   "tel",           :null => false
+    t.string   "fbid",          :null => false
+    t.string   "email",         :null => false
+    t.text     "reason",        :null => false
+    t.text     "date_and_time", :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
   create_table "questions", :force => true do |t|

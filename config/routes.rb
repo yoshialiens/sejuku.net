@@ -30,7 +30,7 @@ Sejuku::Application.routes.draw do
   # contact form
   match 'pages/contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
-  match 'contact:notice' => 'contact#index'
+  match 'pages/contact:notice' => 'contact#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
