@@ -28,7 +28,7 @@ Sejuku::Application.routes.draw do
 	post "user_agents/viewed"
 
   # contact form
-  match 'contact' => 'contact#new', :as => 'contact', :via => :get
+  match 'pages/contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post
   match 'contact:notice' => 'contact#index'
 

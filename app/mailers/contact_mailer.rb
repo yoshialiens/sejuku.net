@@ -11,7 +11,7 @@ class ContactMailer < ActionMailer::Base
   #x
   def sent(contact)
     @contact = contact
-    mail to: "shota7180@gmail.com", subject: "フォームからのお問い合わせ"
+    mail to: "samuraijuku@gmail.com", subject: "フォームからのお問い合わせ"
   end
   
   def resp(contact)

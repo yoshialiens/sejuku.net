@@ -3,7 +3,7 @@
 <%= @contact.name %>
 
 【性別】
-<%= @contact.sex %>
+<% if @contact.sex == 0 %>男<% else %>女<% end %>
 
 【年齢】
 <%= @contact.age %>
