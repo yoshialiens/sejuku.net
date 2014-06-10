@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140604155119) do
+ActiveRecord::Schema.define(:version => 20140610223442) do
 
   create_table "answers", :force => true do |t|
     t.text     "body"
@@ -26,7 +26,7 @@ ActiveRecord::Schema.define(:version => 20140604155119) do
     t.string   "sex",           :null => false
     t.string   "age",           :null => false
     t.string   "tel",           :null => false
-    t.string   "fbid",          :null => false
+    t.string   "fbid"
     t.string   "email",         :null => false
     t.text     "reason",        :null => false
     t.text     "date_and_time", :null => false
